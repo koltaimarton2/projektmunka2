@@ -1,25 +1,26 @@
-# Minden is Kanye Westről
+# Pankix büszke lenne
 
-`Kanye West egy amerikai top listás rapper, énekes, zeneszerző, lemezproducer és divatervező.`
+`Ez a weboldal a híres MesterMC (MMC) bányközpont weboldal rekrációja/-újragondolása-.`
 ---
 ## A weboldal -----------------------------
 
-- Bemutatja Kanye West *életét röviden és tömören*
-- *Zenei művészetébe* tehetünk betekintést
-- *Album portfolió*
-- Bepillantás *kocertjeinek történéseibe*
-- *Médiai szereplésébe*/ Megnyilvánulásában és milyen eszméket követ
+- *Különleges javascript* funkciók
+- Szerver leírások
+- *Szerencse* pörgetés
+- Rangok vásárlása és leírásuk
+- MesterMC történet
 
 ## == Kollaborátorok ==
 
 ### | Koltai Márton:
-- Zenei karrier - albumok
-- Turnék/Koncertek
-- Kanye rajongó kérdőív
+- Rangok menü
+- *
+- *
 
 ### | Lipót József Zoltán:
- - Főoldal
- - Ye élete
- - Médiai szereplés
-> A weboldal forrásaként használt oldal: [Ye West wikipédia](https://en.wikipedia.org/wiki/Kanye_West)
+ - Login page
+ - Békerék
+ - Navigációs oldal
+ - Javascript
+> A weboldal forrásaként használt oldal: [Bányaközpont](https://banyakozpont.mestermc.hu/)
 
