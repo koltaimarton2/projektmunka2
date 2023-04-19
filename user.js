@@ -1,7 +1,7 @@
 var input = document.getElementById("Username");
 var usrname = document.getElementById("playername")
 var PlayerHead = document.getElementById("playerimg")
-document.getElementById("osszeg").innerText += Math.floor(Math.random() * 10001) + " BÉ";
+document.getElementById("osszeg").innerText = getCookie("beosszeg") + " BÉ";
 
 function getCookie(cname) {
   let name = cname + "=";
@@ -20,6 +20,7 @@ function getCookie(cname) {
 
 function Login() {
   document.cookie = "username=" + input.value;
+  document.cookie = "beosszeg=" + Math.floor(Math.random() * 10001);
   if ((getCookie("username") != "")) window.location.href = 'bekerek.html';
 }
 
@@ -44,6 +45,3 @@ function getSkinHead() {
   };
   xhr.send();
 }
-
-
-getSkinHead()
