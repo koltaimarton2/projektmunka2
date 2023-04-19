@@ -30,8 +30,10 @@ function getSkinHead() {
   xhr.responseType = 'text';
   xhr.onload = function() {
     if (xhr.status === 200) {
+      console.log()
+      console.log(xhr.response)
       for (let i = 0; i < 32; i++) {
-        fullUUID += xhr.response[4866+i];
+        fullUUID += xhr.response[xhr.response.search("Trimmed UUID:")+170+i];
         if(PlayerHead != undefined) { PlayerHead.src = `https://crafatar.com/avatars/${fullUUID}?size=48&default=MHF_Steve&overlay`; usrname.innerText = getCookie("username");}
         else return;
       }
