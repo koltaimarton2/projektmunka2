@@ -1,3 +1,7 @@
-.card .accordion {
-    border: none;
+.card {
+    display: block;
+    margin: auto;
 }
+.accordion-item {
+    --bs-accordion-border-width: none;
+  }
