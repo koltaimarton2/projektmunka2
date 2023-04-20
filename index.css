@@ -29,6 +29,21 @@
 #skinholder {
   width: 300px;
   height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  image-rendering: pixelated;
+}
+
+#Previewbutton {
+  transition: 0.3s ease-in-out;
+  width: 100px;
+  height: 60px;
+  position: absolute;
+  left: 78%;
+}
+
+#Previewbutton:hover {
+  left: 78.5%;
 }
 
 .rankcolor {
@@ -79,6 +94,7 @@
     transform: translateY(0);
   }
 }
+
 
 @keyframes bg-scrolling-reverse {
   100% {
