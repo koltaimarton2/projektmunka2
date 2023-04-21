@@ -14,7 +14,7 @@
 
 ### | Koltai Márton:
 - Rangok menü
-- *
+- Brutál kinézetek
 - *
 
 ### | Lipót József Zoltán:
