@@ -1,3 +1,8 @@
+/* LOGIN PAGE ----------------------------------------------------------- */
+#backgroundIMG { background-image: url('https://banyakozpont.mestermc.hu/images/login_hatterkep.jpg'); }
+.bg-black { opacity: 0.8; }
+
+/* ALL SITES ASIDE FROM NAV.HTML -----------------------------------------------------------*/
 .nav-item {
   padding-right: 30px !important;
 }
@@ -15,10 +20,6 @@
   z-index: -999;
 }
 
-#backgroundIMG {
-  background-image: url('https://banyakozpont.mestermc.hu/images/login_hatterkep.jpg');
-}
-
 #navback {
   color: #999;
   text-align: center;
@@ -26,12 +27,35 @@
   animation: bg-scrolling-reverse 0.92s infinite;
   animation-timing-function: linear;
 }
+
+/* RANGOK.HTML -----------------------------------------------------------*/
+.rankcolor { color: #d3d3d3; }
+.card { border: none !important; }
+
+/* KELLEKEK.HTML -----------------------------------------------------------*/
+
 #skinholder {
   width: 300px;
   height: 200px;
   background-repeat: no-repeat;
   background-size: cover;
   image-rendering: pixelated;
+}
+
+#bracletHolder img {
+  width: 200px;
+  height: 150px;
+  white-space: nowrap;
+}
+
+.holders img {
+  width: 200px!important;
+  height: 200px;
+  white-space: nowrap;
+}
+
+#loadmoreBTN{
+  width: 110%!important;
 }
 
 #Previewbutton {
@@ -42,48 +66,31 @@
   left: 78%;
 }
 
+#Previewbutton button {
+  border: none;
+}
+
 #Previewbutton:hover {
   left: 78.5%;
 }
 
-.rankcolor {
-  color: #d3d3d3;
-}
-
-.bg-black {
-  opacity: 0.8;
-}
-
-.card {
-  border: none !important;
-}
+/* ANIMATIONS ******************************************************************** */
 
 .loadAnim {
   transition: ease-in-out;
   animation: bounce-in-right 2s ease normal;
 }
 
-@keyframes bounce-in-right {
-  0% {
-    opacity: 0;
-    transform: translateX(2000px);
-  }
-  60% {
-    opacity: 1;
-    transform: translateX(-30px);
-  }
-  80% {
-    transform: translateX(10px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
 .container {
   animation: fadein 2s ease normal;
 }
 
+@keyframes bounce-in-right {
+  0% { opacity: 0; transform: translateX(2000px); }
+  60% { opacity: 1; transform: translateX(-30px); }
+  80% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
+}
 @keyframes fadein {
   0% {
     opacity: 0;
@@ -95,15 +102,5 @@
   }
 }
 
-
-@keyframes bg-scrolling-reverse {
-  100% {
-    background-position: 50px 50px;
-  }
-}
-
-@keyframes bg-scrolling {
-  0% {
-    background-position: 50px 50px;
-  }
-}
+@keyframes bg-scrolling-reverse { 100% { background-position: 50px 50px; } }
+@keyframes bg-scrolling { 0% { background-position: 50px 50px; } }
