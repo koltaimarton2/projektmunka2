@@ -14,29 +14,30 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="loadAnim navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a href="nav.html"><button class="btn btn-outline-success">&#x290E Navigátor</button></a>
-          </li>
+      <a href="nav.html"><button class="btn btn-outline-success">&#x290E Navigátor</button></a>
+      <div class="text-end">
+        <span id="osszeg" class="mx-md-3 mb-2 mb-lg-0 p-2 fs-5"></span>
+        <span id="playername" class="mx-md-2 mb-2 mb-lg-0 p-2 fs-5"></span>
+        <img id="playerimg" class="mb-2 mb-lg-0" alt="Loading...">
       </div>
-      <p id="osszeg" class="text-end me-auto mb-2 mb-lg-0 p-2 fs-5"></p>
-      <p id="playername" class="text-end me-auto mb-2 mb-lg-0 p-2 fs-5"></p>
-      <img id="playerimg" class="me-auto mb-2 mb-lg-0" alt="Loading...">
     </div>
   </nav>
-  <h3 class="mb-4 ms-4 text-secondary">Rang aktiválás</h3>
-  <div class="container-fluid">
-    <div class="row justify-content-center mb-0">
-      <div class="col-md-4">
+  <div id="navback" class="backgroundDiv"></div>
+  <section class="container my-3">
+    <div class="card m-md-auto">
+        <div class="card-header fs-4 fst-italic">
+            Rangok
+        </div>
+    <div class="row justify-content-center row-cols-xl-3 row-cols-lg-2 row-cols-md-2 row-cols-sm-1 row-cols-1">
+      <div class="col">
         <div class="card mb-3 bg-success" style="max-width: 540px;">
           <div class="row g-0">
-            <div class="col-md-8">
+            <div class="col-8">
               <img src="images/rangok/vip.png" class="img-fluid rounded-start" alt="V.I.P">
             </div>
-            <div class="col-md-4">
+            <div class="col-4">
               <div class="card-body">
                 <h5 class="card-title text-end rankcolor">V.I.P</h5>
                 <p class="card-text text-end rankcolor">254 FT</p>
@@ -73,13 +74,13 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col">
         <div class="card mb-3" style="background-color: #4682B4; max-width: 540px;">
           <div class="row g-0 ">
-            <div class="col-md-8">
+            <div class="col-8">
               <img src="images/rangok/elit.png" class="img-fluid rounded-start" alt="ELIT">
             </div>
-            <div class="col-md-4">
+            <div class="col-4">
               <div class="card-body">
                 <h5 class="card-title text-end rankcolor">ELIT</h5>
                 <p class="card-text text-end rankcolor">508 FT</p>
@@ -121,23 +122,24 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col">
         <div class="card mb-3" style="background-color: #6B238E; max-width: 540px;">
           <div class="row g-0">
-            <div class="col-md-8">
+            <div class="col-8">
               <img src="images/rangok/zsk.png" class="img-fluid rounded-start" alt="ZSÍRKIRÁLY">
             </div>
-            <div class="col-md-4">
+            <div class="col-4">
               <div class="card-body">
                 <h5 class="card-title text-end rankcolor">ZSÍRKIRÁLY</h5>
                 <p class="card-text text-end rankcolor">1 016 FT</p>
               </div>
             </div>
+          </div>
             <div class="row g-0">
               <div class="accordion" id="accordion">
                 <div class="accordion-item">
                   <h2 class="accordion-header">
-                    <button class="accordion-button rankcolor" style="background-color: #6B238E;" type="button"
+                    <button class="accordion-button " style="background-color: #6B238E;" type="button"
                       data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true"
                       aria-controls="collapseOne">
                       Előnyök
@@ -165,163 +167,54 @@
                   </div>
                 </div>
               </div>
-            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card mb-3" style="background-color: #1BA39C; max-width: 540px;">
-          <div class="row g-0">
-            <div class="col-md-8">
-              <img src="images/rangok/titan.png" class="img-fluid rounded-start" alt="TITÁN">
-            </div>
-            <div class="col-md-4">
-              <div class="card-body">
-                <h5 class="card-title text-end rankcolor">TITÁN</h5>
-                <p class="card-text text-end rankcolor">2 032 FT</p>
-              </div>
-            </div>
+    <div class="col">
+      <div class="card mb-3" style="background-color: #1BA39C; max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-8">
+            <img src="images/rangok/titan.png" class="img-fluid rounded-start" alt="TITÁN">
           </div>
-          <div class="row g-0">
-            <div class="accordion" id="accordion">
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button rankcolor" style="background-color: #1BA39C;" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true"
-                    aria-controls="collapseOne">
-                    Előnyök
-                  </button>
-                </h2>
-                <div id="collapseFour" class="accordion-collapse collapse " data-bs-parent="#accordion">
-                  <div class="accordion-body">
-                    <h6>Elosztó (lobby) képességek</h6>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item ">'/aknakereso' Aknakereső játék akitválása</li>
-                      <li class="list-group-item ">Sapkák lehívása elosztón</li>
-                      <li class="list-group-item ">5 fajta Effekt aktiválása elosztón</li>
-                      <li class="list-group-item ">16 fajta Ruha aktiválása elosztón</li>
-                      <li class="list-group-item ">5 fajta Hátas aktiválása elosztón</li>
-                      <li class="list-group-item ">Játékos csúzli elosztón</li>
-                      <li class="list-group-item ">Sárkányon való lovaglás</li>
-                      <li class="list-group-item ">Minden Fej, Összes Effekt, Effekt Köpenyek, Zászló : Tűzijáték</li>
-                    </ul>
-                    <h6 class="mt-2">Háziállatok</h6>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">Pingvin, Kamera, Homer, Bohóchal, Kárász, Csuka, Lazac</li>
-                      <li class="list-group-item">minden előző rang háziállatai</li>
-                    </ul>
-                    <h6 class="mt-2">Ajándék NAPI LÁDA : 2</h6>
-                    <p>_REBUSZ_NPC-től veheted át</p>
-                    <h6 class="mt-2">Szerver áldás : 1</h6>
-                    <p>Havi egyszer aktiválható áldás a szerveren</p>
-                  </div>
-                </div>
-              </div>
+          <div class="col-4">
+            <div class="card-body">
+              <h5 class="card-title text-end rankcolor">TITÁN</h5>
+              <p class="card-text text-end rankcolor">2 032 FT</p>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card mb-3" style="background-color: #e87e04; max-width: 540px;">
-          <div class="row g-0">
-            <div class="col-md-8">
-              <img src="images/rangok/felisten.png" class="img-fluid rounded-start" alt="FÉLISTEN">
-            </div>
-            <div class="col-md-4">
-              <div class="card-body">
-                <h5 class="card-title text-end rankcolor">FÉLISTEN</h5>
-                <p class="card-text text-end rankcolor">3 048 FT</p>
-              </div>
-            </div>
-          </div>
-          <div class="row g-0">
-            <div class="accordion" id="accordion">
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button rankcolor" style="background-color: #e87e04;" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true"
-                    aria-controls="collapseOne">
-                    Előnyök
-                  </button>
-                </h2>
-                <div id="collapseFive" class="accordion-collapse collapse " data-bs-parent="#accordion">
-                  <div class="accordion-body">
-                    <h6>Elosztó (lobby) képességek</h6>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item ">'/aknakereso' Aknakereső játék akitválása</li>
-                      <li class="list-group-item ">Sapkák lehívása elosztón</li>
-                      <li class="list-group-item ">5 fajta Effekt aktiválása elosztón</li>
-                      <li class="list-group-item ">16 fajta Ruha aktiválása elosztón</li>
-                      <li class="list-group-item ">5 fajta Hátas aktiválása elosztón</li>
-                      <li class="list-group-item ">Játékos csúzli elosztón</li>
-                      <li class="list-group-item ">Sárkányon való lovaglás</li>
-                      <li class="list-group-item ">Minden Fej, Összes Effekt, Effekt Köpenyek, Zászló : Tűzijáték</li>
-                    </ul>
-                    <h6 class="mt-2">Háziállatok</h6>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">Pingvin, Kamera, Homer, Bohóchal, Kárász, Csuka, Lazac</li>
-                      <li class="list-group-item">minden előző rang háziállatai</li>
-                    </ul>
-                    <h6 class="mt-2">Ajándék NAPI LÁDA : 2</h6>
-                    <p>_REBUSZ_NPC-től veheted át</p>
-                    <h6 class="mt-2">Szerver áldás : 1</h6>
-                    <p>Havi egyszer aktiválható áldás a szerveren</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card mb-3" style="background-color: #555555; max-width: 540px;">
-          <div class="row g-0">
-            <div class="col-md-7">
-              <img src="images/rangok/mindenhato.png" class="img-fluid rounded-start" alt="MINDENHATÓ">
-            </div>
-            <div class="col-md-5">
-              <div class="card-body">
-                <h5 class="card-title text-end rankcolor">MINDENHATÓ</h5>
-                <p class="card-text text-end rankcolor">4 064 FT</p>
-              </div>
-            </div>
-          </div>
-          <div class="row g-0">
-            <div class="accordion" id="accordion">
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button rankcolor" style="background-color: #555555;" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true"
-                    aria-controls="collapseOne">
-                    Előnyök
-                  </button>
-                </h2>
-                <div id="collapseSix" class="accordion-collapse collapse " data-bs-parent="#accordion">
-                  <div class="accordion-body">
-                    <h6>Elosztó (lobby) képességek</h6>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item ">'/aknakereso' Aknakereső játék akitválása</li>
-                      <li class="list-group-item ">Sapkák lehívása elosztón</li>
-                      <li class="list-group-item ">Minden elérhető Effekt aktiválása elosztón</li>
-                      <li class="list-group-item ">16 fajta Ruha aktiválása elosztón</li>
-                      <li class="list-group-item ">5 fajta Hátas aktiválása elosztón</li>
-                      <li class="list-group-item ">Játékos csúzli elosztón</li>
-                      <li class="list-group-item ">Sárkányon való lovaglás</li>
-                      <li class="list-group-item ">2 fajta ávtváltozás akitválása elosztón</li>
-                      <li class="list-group-item ">Minden Fej, Összes Effekt, Effekt Köpenyek, Zászlók</li>
-                    </ul>
-                    <h6 class="mt-2">Háziállatok</h6>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">Kicsi Mini, Panda, Bart</li>
-                      <li class="list-group-item">minden előző rang háziállatai</li>
-                    </ul>
-                    <h6 class="mt-2">Ajándék NAPI LÁDA : 2</h6>
-                    <p>_REBUSZ_NPC-től veheted át</p>
-                    <h6 class="mt-2">Szerver áldás : 3</h6>
-                    <p>Havi egyszer aktiválható áldás a szerveren</p>
-                  </div>
+        <div class="row g-0">
+          <div class="accordion" id="accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button rankcolor" style="background-color: #1BA39C;" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  Előnyök
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse " data-bs-parent="#accordion">
+                <div class="accordion-body">
+                  <h6>Elosztó (lobby) képességek</h6>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item ">'/aknakereso' Aknakereső játék akitválása</li>
+                    <li class="list-group-item ">Sapkák lehívása elosztón</li>
+                    <li class="list-group-item ">5 fajta Effekt aktiválása elosztón</li>
+                    <li class="list-group-item ">16 fajta Ruha aktiválása elosztón</li>
+                    <li class="list-group-item ">5 fajta Hátas aktiválása elosztón</li>
+                    <li class="list-group-item ">Játékos csúzli elosztón</li>
+                    <li class="list-group-item ">Sárkányon való lovaglás</li>
+                    <li class="list-group-item ">Minden Fej, Összes Effekt, Effekt Köpenyek, Zászló : Tűzijáték</li>
+                  </ul>
+                  <h6 class="mt-2">Háziállatok</h6>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Pingvin, Kamera, Homer, Bohóchal, Kárász, Csuka, Lazac</li>
+                    <li class="list-group-item">minden előző rang háziállatai</li>
+                  </ul>
+                  <h6 class="mt-2">Ajándék NAPI LÁDA : 2</h6>
+                  <p>_REBUSZ_NPC-től veheted át</p>
+                  <h6 class="mt-2">Szerver áldás : 1</h6>
+                  <p>Havi egyszer aktiválható áldás a szerveren</p>
                 </div>
               </div>
             </div>
@@ -329,183 +222,286 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card mb-3" style="background-color: #ef4836; max-width: 540px;">
-          <div class="row g-0">
-            <div class="col-md-8">
-              <img src="images/rangok/troll.png" class="img-fluid rounded-start" alt="TROLL">
-            </div>
-            <div class="col-md-4">
-              <div class="card-body">
-                <h5 class="card-title text-end rankcolor">TROLL</h5>
-                <p class="card-text text-end rankcolor">2 032 FT</p>
-              </div>
+    <div class="col">
+      <div class="card mb-3" style="background-color: #e87e04; max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-8">
+            <img src="images/rangok/felisten.png" class="img-fluid rounded-start" alt="FÉLISTEN">
+          </div>
+          <div class="col-4">
+            <div class="card-body">
+              <h5 class="card-title text-end rankcolor">FÉLISTEN</h5>
+              <p class="card-text text-end rankcolor">3 048 FT</p>
             </div>
           </div>
-          <div class="row g-0">
-            <div class="accordion" id="accordion">
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button rankcolor" style="background-color: #ef4836;" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true"
-                    aria-controls="collapseOne">
-                    Előnyök
-                  </button>
-                </h2>
-                <div id="collapseSeven" class="accordion-collapse collapse " data-bs-parent="#accordion">
-                  <div class="accordion-body">
-                    <p class="text-center">Ez egy MULTIRANG: a TROLL és TROLL+ rangot bármikor megvásárold és aktiválod,
-                      az előtte lévő aktív rangod is MEGMARAD. Tehát a TROLL és TROLL+ rangot játékmódtól függően tudod
-                      aktiválni, tőled függ melyik szerveren szeretnéd használni. A TROLL és TROLL+ rang PVP szerverekre
-                      lett kitalálva pl. : SkyPVP, KitPVP szerveren használható. Akármikor szeretnéd, az előzőleg
-                      megvásárolt rangodra is VISSZA TUDSZ váltani, így KÉT RANGOD van egyszerre.</p>
-                    <h6>Jogok</h6>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item ">Multirang változtatás</li>
-                      <li class="list-group-item ">Zsírrrr</li>
-                      <li class="list-group-item ">/fekszik Lefekvés parancs</li>
-                      <li class="list-group-item ">/trollgun Trollgun parancs</li>
-                      <li class="list-group-item ">/megles Leltár kémlelés parancs</li>
-                      <li class="list-group-item ">/hang lejatsz [hangnev] Hang lejátszása</li>
-                      <li class="list-group-item ">/hang aktival [hangcsomagnev]</li>
-                      <li class="list-group-item ">Elosztó(lobby) képességek</li>
-                      <li class="list-group-item ">TROLL VESZÉLY</li>
-                    </ul>
-                  </div>
+        </div>
+        <div class="row g-0">
+          <div class="accordion" id="accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button rankcolor" style="background-color: #e87e04;" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  Előnyök
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse " data-bs-parent="#accordion">
+                <div class="accordion-body">
+                  <h6>Elosztó (lobby) képességek</h6>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item ">'/aknakereso' Aknakereső játék akitválása</li>
+                    <li class="list-group-item ">Sapkák lehívása elosztón</li>
+                    <li class="list-group-item ">5 fajta Effekt aktiválása elosztón</li>
+                    <li class="list-group-item ">16 fajta Ruha aktiválása elosztón</li>
+                    <li class="list-group-item ">5 fajta Hátas aktiválása elosztón</li>
+                    <li class="list-group-item ">Játékos csúzli elosztón</li>
+                    <li class="list-group-item ">Sárkányon való lovaglás</li>
+                    <li class="list-group-item ">Minden Fej, Összes Effekt, Effekt Köpenyek, Zászló : Tűzijáték</li>
+                  </ul>
+                  <h6 class="mt-2">Háziállatok</h6>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Pingvin, Kamera, Homer, Bohóchal, Kárász, Csuka, Lazac</li>
+                    <li class="list-group-item">minden előző rang háziállatai</li>
+                  </ul>
+                  <h6 class="mt-2">Ajándék NAPI LÁDA : 2</h6>
+                  <p>_REBUSZ_NPC-től veheted át</p>
+                  <h6 class="mt-2">Szerver áldás : 1</h6>
+                  <p>Havi egyszer aktiválható áldás a szerveren</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card mb-3" style="background-color: #ef4836; max-width: 540px;">
-          <div class="row g-0">
-            <div class="col-md-8">
-              <img src="images/rangok/trollplusz.png" class="img-fluid rounded-start" alt="TROLL+">
-            </div>
-            <div class="col-md-4">
-              <div class="card-body">
-                <h5 class="card-title text-end rankcolor">TROLL+</h5>
-                <p class="card-text text-end rankcolor">5 080 FT</p>
-              </div>
+    </div>
+    <div class="col">
+      <div class="card mb-3" style="background-color: #555555; max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-7">
+            <img src="images/rangok/mindenhato.png" class="img-fluid rounded-start" alt="MINDENHATÓ">
+          </div>
+          <div class="col-5">
+            <div class="card-body">
+              <h5 class="card-title text-end rankcolor">MINDENHATÓ</h5>
+              <p class="card-text text-end rankcolor">4 064 FT</p>
             </div>
           </div>
-          <div class="row g-0">
-            <div class="accordion" id="accordion">
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button rankcolor" style="background-color: #ef4836;" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true"
-                    aria-controls="collapseOne">
-                    Előnyök
-                  </button>
-                </h2>
-                <div id="collapseEight" class="accordion-collapse collapse " data-bs-parent="#accordion">
-                  <div class="accordion-body">
-                    <p class="text-center">Ez egy MULTIRANG: a TROLL és TROLL+ rangot bármikor megvásárold és aktiválod,
-                      az előtte lévő aktív rangod is MEGMARAD. Tehát a TROLL és TROLL+ rangot játékmódtól függően tudod
-                      aktiválni, tőled függ melyik szerveren szeretnéd használni. A TROLL és TROLL+ rang PVP szerverekre
-                      lett kitalálva pl. : SkyPVP, KitPVP szerveren használható. Akármikor szeretnéd, az előzőleg
-                      megvásárolt rangodra is VISSZA TUDSZ váltani, így KÉT RANGOD van egyszerre.</p>
-                    <h6>Jogok</h6>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item ">Mindenható+ jogok</li>
-                      <li class="list-group-item ">Multirang változtatás</li>
-                      <li class="list-group-item ">Worldedit
-                        <ul class="list-group">
-                          <li class="list-group-item">//wand lekérsz egy baltát amivel kijelölheted a területet.</li>
-                          <li class="list-group-item">//copy a kijelölt terület másolása</li>
-                          <li class="list-group-item">//paste beillesztés</li>
-                          <li class="list-group-item">//replace terület lecserélése</li>
-                          <li class="list-group-item">//set terület lecserélése</li>
-                          <li class="list-group-item">//undo lépés visszavonása</li>
-                          <li class="list-group-item">Egyszerre 232 blokk szerkeszthető.</li>
-                        </ul>
-                      </li>
-                      <li class="list-group-item ">/troll Skint eltüntetés parancs</li>
-                      <li class="list-group-item ">Zsírrrr</li>
-                      <li class="list-group-item ">/fekszik Lefekvés parancs</li>
-                      <li class="list-group-item ">/trollgun Trollgun parancs</li>
-                      <li class="list-group-item ">/megles Leltár kémlelés parancs</li>
-                      <li class="list-group-item ">/hang lejatsz [hangnev] Hang lejátszása</li>
-                      <li class="list-group-item ">/hang aktival [hangcsomagnev]</li>
-                      <li class="list-group-item ">Elosztó(lobby) képességek</li>
-                      <li class="list-group-item ">TROLL VESZÉLY</li>
-                    </ul>
-                  </div>
+        </div>
+        <div class="row g-0">
+          <div class="accordion" id="accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button rankcolor" style="background-color: #555555;" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  Előnyök
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse " data-bs-parent="#accordion">
+                <div class="accordion-body">
+                  <h6>Elosztó (lobby) képességek</h6>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item ">'/aknakereso' Aknakereső játék akitválása</li>
+                    <li class="list-group-item ">Sapkák lehívása elosztón</li>
+                    <li class="list-group-item ">Minden elérhető Effekt aktiválása elosztón</li>
+                    <li class="list-group-item ">16 fajta Ruha aktiválása elosztón</li>
+                    <li class="list-group-item ">5 fajta Hátas aktiválása elosztón</li>
+                    <li class="list-group-item ">Játékos csúzli elosztón</li>
+                    <li class="list-group-item ">Sárkányon való lovaglás</li>
+                    <li class="list-group-item ">2 fajta ávtváltozás akitválása elosztón</li>
+                    <li class="list-group-item ">Minden Fej, Összes Effekt, Effekt Köpenyek, Zászlók</li>
+                  </ul>
+                  <h6 class="mt-2">Háziállatok</h6>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Kicsi Mini, Panda, Bart</li>
+                    <li class="list-group-item">minden előző rang háziállatai</li>
+                  </ul>
+                  <h6 class="mt-2">Ajándék NAPI LÁDA : 2</h6>
+                  <p>_REBUSZ_NPC-től veheted át</p>
+                  <h6 class="mt-2">Szerver áldás : 3</h6>
+                  <p>Havi egyszer aktiválható áldás a szerveren</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card mb-3" style="background-color: #555555; max-width: 540px;">
-          <div class="row g-0">
-            <div class="col-md-7">
-              <img src="images/rangok/mindenhatoplus.png" class="img-fluid rounded-start" alt="MINDENHATÓ+">
+    </div>
+    <div class="col">
+      <div class="card mb-3" style="background-color: #ef4836; max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-8">
+            <img src="images/rangok/troll.png" class="img-fluid rounded-start" alt="TROLL">
+          </div>
+          <div class="col-4">
+            <div class="card-body">
+              <h5 class="card-title text-end rankcolor">TROLL</h5>
+              <p class="card-text text-end rankcolor">2 032 FT</p>
             </div>
-            <div class="col-md-5">
-              <div class="card-body">
-                <h5 class="card-title text-end rankcolor">MINDENHATÓ+</h5>
-                <p class="card-text text-end rankcolor">5 080 FT</p>
+          </div>
+        </div>
+        <div class="row g-0">
+          <div class="accordion" id="accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button rankcolor" style="background-color: #ef4836;" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  Előnyök
+                </button>
+              </h2>
+              <div id="collapseSeven" class="accordion-collapse collapse " data-bs-parent="#accordion">
+                <div class="accordion-body">
+                  <p class="text-center">Ez egy MULTIRANG: a TROLL és TROLL+ rangot bármikor megvásárold és aktiválod,
+                    az előtte lévő aktív rangod is MEGMARAD. Tehát a TROLL és TROLL+ rangot játékmódtól függően tudod
+                    aktiválni, tőled függ melyik szerveren szeretnéd használni. A TROLL és TROLL+ rang PVP szerverekre
+                    lett kitalálva pl. : SkyPVP, KitPVP szerveren használható. Akármikor szeretnéd, az előzőleg
+                    megvásárolt rangodra is VISSZA TUDSZ váltani, így KÉT RANGOD van egyszerre.</p>
+                  <h6>Jogok</h6>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item ">Multirang változtatás</li>
+                    <li class="list-group-item ">Zsírrrr</li>
+                    <li class="list-group-item ">/fekszik Lefekvés parancs</li>
+                    <li class="list-group-item ">/trollgun Trollgun parancs</li>
+                    <li class="list-group-item ">/megles Leltár kémlelés parancs</li>
+                    <li class="list-group-item ">/hang lejatsz [hangnev] Hang lejátszása</li>
+                    <li class="list-group-item ">/hang aktival [hangcsomagnev]</li>
+                    <li class="list-group-item ">Elosztó(lobby) képességek</li>
+                    <li class="list-group-item ">TROLL VESZÉLY</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-          <div class="row g-0">
-            <div class="accordion" id="accordion">
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button rankcolor" style="background-color: #555555;" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="true"
-                    aria-controls="collapseOne">
-                    Előnyök
-                  </button>
-                </h2>
-                <div id="collapseNine" class="accordion-collapse collapse " data-bs-parent="#accordion">
-                  <div class="accordion-body">
-                    <p class="text-center">A Mindenható+ rang különleges képességekkel bír. Ha visszaélsz vele,
-                      elvesztheted a rangodat! Ne büntess szórakozásból, hencegésből.
-                      Ezt a rangot felelősségteljesen kell használnod. Nagyon fontos, hogy soha senkinek ne add meg a
-                      jelszavadat, mindenki a saját karakteréért felelős.</p>
-                    <h6>Jogok</h6>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item ">Bármilyen mobot meg tudsz idézni.</li>
-                      <li class="list-group-item ">/tp név</li>
-                      <li class="list-group-item ">Worldedit
-                        <ul class="list-group">
-                          <li class="list-group-item">//wand lekérsz egy baltát amivel kijelölheted a területet.</li>
-                          <li class="list-group-item">//copy a kijelölt terület másolása</li>
-                          <li class="list-group-item">//paste beillesztés</li>
-                          <li class="list-group-item">//replace terület lecserélése</li>
-                          <li class="list-group-item">//set terület lecserélése</li>
-                          <li class="list-group-item">//undo lépés visszavonása</li>
-                          <li class="list-group-item">Egyszerre 232 blokk szerkeszthető.</li>
-                        </ul>
-                      </li>
-                      <li class="list-group-item ">/tptoggle</li>
-                      <li class="list-group-item ">/spawner mobnév</li>
-                      <H6>ávtváltozások</H6>
-                      <li class="list-group-item ">/d Minecart Command(Csillében commandblock) Átváltozás</li>
-                      <li class="list-group-item ">/d Minecart Tnt(Csillében Tnt) Átváltozás</li>
-                      <li class="list-group-item ">/d Minecart Tnt(Csillében Tnt) Átváltozás</li>
-                      <li class="list-group-item ">/d Minecart Tnt(Csillében Tnt) Átváltozás</li>
-                      <li class="list-group-item "> /d Minecart Chest(csillében láda) Átváltozás</li>
-                      <li class="list-group-item ">/d Minecart Furnace(csillében kemence) Átváltozás</li>
-                      <li class="list-group-item ">/d Minecart Hopper(csillében tölcsér)</li>
-                      <li class="list-group-item ">/d Minecart Mob Spawner(csillében mob idéző) Átváltozás</li>
-                      <li class="list-group-item ">/d Ender Crystal Átváltozás</li>
-                      <h6>Extra háziállatok:</h6>
-                      <li class="list-group-item">/pet menu Jegesmedve</li>
-                      <li class="list-group-item">/pet menu Picur</li>
-                      <li class="list-group-item">/pet menu BB-8</li>
-                      <li class="list-group-item">/pet menu Mini Tigris</li>
-                      <li class="list-group-item"> /pet menu YouTube Logo</li>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mb-3" style="background-color: #ef4836; max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-8">
+            <img src="images/rangok/trollplusz.png" class="img-fluid rounded-start" alt="TROLL+">
+          </div>
+          <div class="col-4">
+            <div class="card-body">
+              <h5 class="card-title text-end rankcolor">TROLL+</h5>
+              <p class="card-text text-end rankcolor">5 080 FT</p>
+            </div>
+          </div>
+        </div>
+        <div class="row g-0">
+          <div class="accordion" id="accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button rankcolor" style="background-color: #ef4836;" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  Előnyök
+                </button>
+              </h2>
+              <div id="collapseEight" class="accordion-collapse collapse " data-bs-parent="#accordion">
+                <div class="accordion-body">
+                  <p class="text-center">Ez egy MULTIRANG: a TROLL és TROLL+ rangot bármikor megvásárold és aktiválod,
+                    az előtte lévő aktív rangod is MEGMARAD. Tehát a TROLL és TROLL+ rangot játékmódtól függően tudod
+                    aktiválni, tőled függ melyik szerveren szeretnéd használni. A TROLL és TROLL+ rang PVP szerverekre
+                    lett kitalálva pl. : SkyPVP, KitPVP szerveren használható. Akármikor szeretnéd, az előzőleg
+                    megvásárolt rangodra is VISSZA TUDSZ váltani, így KÉT RANGOD van egyszerre.</p>
+                  <h6>Jogok</h6>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item ">Mindenható+ jogok</li>
+                    <li class="list-group-item ">Multirang változtatás</li>
+                    <li class="list-group-item ">Worldedit
+                      <ul class="list-group">
+                        <li class="list-group-item">//wand lekérsz egy baltát amivel kijelölheted a területet.</li>
+                        <li class="list-group-item">//copy a kijelölt terület másolása</li>
+                        <li class="list-group-item">//paste beillesztés</li>
+                        <li class="list-group-item">//replace terület lecserélése</li>
+                        <li class="list-group-item">//set terület lecserélése</li>
+                        <li class="list-group-item">//undo lépés visszavonása</li>
+                        <li class="list-group-item">Egyszerre 232 blokk szerkeszthető.</li>
+                      </ul>
+                    </li>
+                    <li class="list-group-item ">/troll Skint eltüntetés parancs</li>
+                    <li class="list-group-item ">Zsírrrr</li>
+                    <li class="list-group-item ">/fekszik Lefekvés parancs</li>
+                    <li class="list-group-item ">/trollgun Trollgun parancs</li>
+                    <li class="list-group-item ">/megles Leltár kémlelés parancs</li>
+                    <li class="list-group-item ">/hang lejatsz [hangnev] Hang lejátszása</li>
+                    <li class="list-group-item ">/hang aktival [hangcsomagnev]</li>
+                    <li class="list-group-item ">Elosztó(lobby) képességek</li>
+                    <li class="list-group-item ">TROLL VESZÉLY</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mb-3" style="background-color: #555555; max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-7">
+            <img src="images/rangok/mindenhatoplus.png" class="img-fluid rounded-start" alt="MINDENHATÓ+">
+          </div>
+          <div class="col-5">
+            <div class="card-body">
+              <h5 class="card-title text-end rankcolor">MINDENHAT+</h5>
+              <p class="card-text text-end rankcolor">5 080 FT</p>
+            </div>
+          </div>
+        </div>
+        <div class="row g-0">
+          <div class="accordion" id="accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button rankcolor" style="background-color: #555555;" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  Előnyök
+                </button>
+              </h2>
+              <div id="collapseNine" class="accordion-collapse collapse " data-bs-parent="#accordion">
+                <div class="accordion-body">
+                  <p class="text-center">A Mindenható+ rang különleges képességekkel bír. Ha visszaélsz vele,
+                    elvesztheted a rangodat! Ne büntess szórakozásból, hencegésből.
+                    Ezt a rangot felelősségteljesen kell használnod. Nagyon fontos, hogy soha senkinek ne add meg a
+                    jelszavadat, mindenki a saját karakteréért felelős.</p>
+                  <h6>Jogok</h6>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item ">Bármilyen mobot meg tudsz idézni.</li>
+                    <li class="list-group-item ">/tp név</li>
+                    <li class="list-group-item ">Worldedit
+                      <ul class="list-group">
+                        <li class="list-group-item">//wand lekérsz egy baltát amivel kijelölheted a területet.</li>
+                        <li class="list-group-item">//copy a kijelölt terület másolása</li>
+                        <li class="list-group-item">//paste beillesztés</li>
+                        <li class="list-group-item">//replace terület lecserélése</li>
+                        <li class="list-group-item">//set terület lecserélése</li>
+                        <li class="list-group-item">//undo lépés visszavonása</li>
+                        <li class="list-group-item">Egyszerre 232 blokk szerkeszthető.</li>
+                      </ul>
+                    </li>
+                    <li class="list-group-item ">/tptoggle</li>
+                    <li class="list-group-item ">/spawner mobnév</li>
+                    <H6>ávtváltozások</H6>
+                    <li class="list-group-item ">/d Minecart Command(Csillében commandblock) Átváltozás</li>
+                    <li class="list-group-item ">/d Minecart Tnt(Csillében Tnt) Átváltozás</li>
+                    <li class="list-group-item ">/d Minecart Tnt(Csillében Tnt) Átváltozás</li>
+                    <li class="list-group-item ">/d Minecart Tnt(Csillében Tnt) Átváltozás</li>
+                    <li class="list-group-item "> /d Minecart Chest(csillében láda) Átváltozás</li>
+                    <li class="list-group-item ">/d Minecart Furnace(csillében kemence) Átváltozás</li>
+                    <li class="list-group-item ">/d Minecart Hopper(csillében tölcsér)</li>
+                    <li class="list-group-item ">/d Minecart Mob Spawner(csillében mob idéző) Átváltozás</li>
+                    <li class="list-group-item ">/d Ender Crystal Átváltozás</li>
+                    <h6>Extra háziállatok:</h6>
+                    <li class="list-group-item">/pet menu Jegesmedve</li>
+                    <li class="list-group-item">/pet menu Picur</li>
+                    <li class="list-group-item">/pet menu BB-8</li>
+                    <li class="list-group-item">/pet menu Mini Tigris</li>
+                    <li class="list-group-item"> /pet menu YouTube Logo</li>
 
-                    </ul>
-                  </div>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -513,105 +509,53 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="card mb-3" style="background-color: #19380E; max-width: 540px;">
-          <div class="row g-0">
-            <div class="col-md-7">
-              <img src="images/rangok/bosszuallo.png" class="img-fluid rounded-start" alt="BOSSZÚÁLLÓ">
-            </div>
-            <div class="col-md-4">
-              <div class="card-body">
-                <h5 class="card-title text-end rankcolor">BOSSZÚÁLLÓ</h5>
-                <p class="card-text text-end rankcolor">10 160 FT</p>
-              </div>
-            </div>
+    </div>
+    <div class="row justify-content-center row-cols-lg-2 row-cols-md-2 row-cols-sm-1 row-cols-1">
+    <div class="col">
+      <div class="card mb-3" style="background-color: #19380E; max-width: 540px;">
+        <div class="row g-0 ">
+          <div class="col-7">
+            <img src="images/rangok/bosszuallo.png" class="img-fluid rounded-start" alt="BOSSZÚÁLLÓ">
           </div>
-          <div class="row g-0">
-            <div class="accordion" id="accordion">
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button rankcolor" style="background-color: #19380E;" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="true"
-                    aria-controls="collapseOne">
-                    Előnyök
-                  </button>
-                </h2>
-                <div id="collapseTen" class="accordion-collapse collapse " data-bs-parent="#accordion">
-                  <div class="accordion-body">
-                    <h6>Jogok</h6>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item ">Rangváltás</li>
-                      <li class="list-group-item ">Jelentés használata</li>
-                      <li class="list-group-item ">Worldedit
-                        <ul class="list-group">
-                          <li class="list-group-item">//wand lekérsz egy baltát amivel kijelölheted a területet.</li>
-                          <li class="list-group-item">//copy a kijelölt terület másolása</li>
-                          <li class="list-group-item">//paste beillesztés</li>
-                          <li class="list-group-item">//replace terület lecserélése</li>
-                          <li class="list-group-item">//set terület lecserélése</li>
-                          <li class="list-group-item">//undo lépés visszavonása</li>
-                          <li class="list-group-item">Egyszerre 232 blokk szerkeszthető.</li>
-                        </ul>
-                      </li>
-                      <li class="list-group-item ">Átok: lassúság, vakság, sebesség, teleportálás</li>
-                      <li class="list-group-item ">Rébusztól egy külön láda, amit csak Te tudsz átvenni</li>
-                      <li class="list-group-item ">/kit thanos</li>
-                      <li class="list-group-item ">Petek</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+          <div class="col-4">
+            <div class="card-body">
+              <h5 class="card-title text-end rankcolor">BOSSZÚÁLLÓ</h5>
+              <p class="card-text text-end rankcolor">10 160 FT</p>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card mb-3" style="background-color: #3F2210; max-width: 540px;">
-          <div class="row g-0">
-            <div class="col-md-8">
-              <img src="images/rangok/mutans.png" class="img-fluid rounded-start" alt="MUTÁNS">
-            </div>
-            <div class="col-md-3">
-              <div class="card-body">
-                <h5 class="card-title text-end rankcolor">MUTÁNS</h5>
-                <p class="card-text text-end rankcolor">10 160 FT</p>
-              </div>
-            </div>
-          </div>
-          <div class="row g-0">
-            <div class="accordion" id="accordion">
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button rankcolor" style="background-color: #3F2210;" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="true"
-                    aria-controls="collapseOne">
-                    Előnyök
-                  </button>
-                </h2>
-                <div id="collapseEleven" class="accordion-collapse collapse " data-bs-parent="#accordion">
-                  <div class="accordion-body">
-                    <h6>Jogok</h6>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item ">Rangváltás</li>
-                      <li class="list-group-item ">Jelentés használata</li>
-                      <li class="list-group-item ">Worldedit
-                        <ul class="list-group">
-                          <li class="list-group-item">//wand lekérsz egy baltát amivel kijelölheted a területet.</li>
-                          <li class="list-group-item">//copy a kijelölt terület másolása</li>
-                          <li class="list-group-item">//paste beillesztés</li>
-                          <li class="list-group-item">//replace terület lecserélése</li>
-                          <li class="list-group-item">//set terület lecserélése</li>
-                          <li class="list-group-item">//undo lépés visszavonása</li>
-                          <li class="list-group-item">Egyszerre 232 blokk szerkeszthető.</li>
-                        </ul>
-                      </li>
-                      <li class="list-group-item ">Átok: lassúság, vakság, sebesség, teleportálás</li>
-                      <li class="list-group-item ">Rébusztól egy külön láda, amit csak Te tudsz átvenni</li>
-                      <li class="list-group-item ">/kit thanos</li>
-                      <li class="list-group-item ">Petek</li>
-                    </ul>
-                  </div>
+        <div class="row g-0">
+          <div class="accordion" id="accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button rankcolor" style="background-color: #19380E;" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  Előnyök
+                </button>
+              </h2>
+              <div id="collapseTen" class="accordion-collapse collapse " data-bs-parent="#accordion">
+                <div class="accordion-body">
+                  <h6>Jogok</h6>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item ">Rangváltás</li>
+                    <li class="list-group-item ">Jelentés használata</li>
+                    <li class="list-group-item ">Worldedit
+                      <ul class="list-group">
+                        <li class="list-group-item">//wand lekérsz egy baltát amivel kijelölheted a területet.</li>
+                        <li class="list-group-item">//copy a kijelölt terület másolása</li>
+                        <li class="list-group-item">//paste beillesztés</li>
+                        <li class="list-group-item">//replace terület lecserélése</li>
+                        <li class="list-group-item">//set terület lecserélése</li>
+                        <li class="list-group-item">//undo lépés visszavonása</li>
+                        <li class="list-group-item">Egyszerre 232 blokk szerkeszthető.</li>
+                      </ul>
+                    </li>
+                    <li class="list-group-item ">Átok: lassúság, vakság, sebesség, teleportálás</li>
+                    <li class="list-group-item ">Rébusztól egy külön láda, amit csak Te tudsz átvenni</li>
+                    <li class="list-group-item ">/kit thanos</li>
+                    <li class="list-group-item ">Petek</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -619,91 +563,141 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="card mb-3" style="background-color: #003447; max-width: 540px;">
-          <div class="row g-0">
-            <div class="col-md-6">
-              <img src="images/rangok/jedi.png" class="img-fluid rounded-start" alt="JEDI">
-            </div>
-            <div class="col-md-5">
-              <div class="card-body">
-                <h5 class="card-title text-end rankcolor">JEDI</h5>
-                <p class="card-text text-end rankcolor"><sub>BANKKÁRTYÁVAL</sub>5000 FT</p>
-              </div>
+    <div class="col">
+      <div class="card mb-3" style="background-color: #3F2210; max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-8">
+            <img src="images/rangok/mutans.png" class="img-fluid rounded-start" alt="MUTÁNS">
+          </div>
+          <div class="col-3">
+            <div class="card-body">
+              <h5 class="card-title text-end rankcolor">MUTÁNS</h5>
+              <p class="card-text text-end rankcolor">10 160 FT</p>
             </div>
           </div>
-          <div class="row g-0">
-            <div class="accordion" id="accordion">
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button rankcolor" style="background-color: #003447;" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="true"
-                    aria-controls="collapseOne">
-                    Előnyök
-                  </button>
-                </h2>
-                <div id="collapseTwelve" class="accordion-collapse collapse " data-bs-parent="#accordion">
-                  <div class="accordion-body">
-                    <h6>Jedi képességek</h6>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item ">Jedi Kit : Revan (BedWars arénákban)</li>
-                      <li class="list-group-item ">Minden Kit ingyenesen lehívható a SkyPvP és a KitPvP szervereken.
-                        <ul class="list-group ">
-                          <li class="list-group-item">/jedi gyogyitas -> Regeneráció 3</li>
-                          <li class="list-group-item">/jedi ugras -> Ugrás 3</li>
-                          <li class="list-group-item">/jedi meditacio -> Regeneráció 2, Glowing 2, Sebzés ellenállás 2, Gyorsaság 2, Élet növelés 2</li>
-                        </ul>
-                      </li>
-                      <li class="list-group-item ">Brutál kinézetek</li>
-                      <li class="list-group-item ">Heti Egyszeri INGYENES áldások</li>
-                    </ul>
-                  </div>
+        </div>
+        <div class="row g-0">
+          <div class="accordion" id="accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button rankcolor" style="background-color: #3F2210;" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  Előnyök
+                </button>
+              </h2>
+              <div id="collapseEleven" class="accordion-collapse collapse " data-bs-parent="#accordion">
+                <div class="accordion-body">
+                  <h6>Jogok</h6>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item ">Rangváltás</li>
+                    <li class="list-group-item ">Jelentés használata</li>
+                    <li class="list-group-item ">Worldedit
+                      <ul class="list-group">
+                        <li class="list-group-item">//wand lekérsz egy baltát amivel kijelölheted a területet.</li>
+                        <li class="list-group-item">//copy a kijelölt terület másolása</li>
+                        <li class="list-group-item">//paste beillesztés</li>
+                        <li class="list-group-item">//replace terület lecserélése</li>
+                        <li class="list-group-item">//set terület lecserélése</li>
+                        <li class="list-group-item">//undo lépés visszavonása</li>
+                        <li class="list-group-item">Egyszerre 232 blokk szerkeszthető.</li>
+                      </ul>
+                    </li>
+                    <li class="list-group-item ">Átok: lassúság, vakság, sebesség, teleportálás</li>
+                    <li class="list-group-item ">Rébusztól egy külön láda, amit csak Te tudsz átvenni</li>
+                    <li class="list-group-item ">/kit thanos</li>
+                    <li class="list-group-item ">Petek</li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-6 justify-content-center">
-        <div class="card mb-3" style="background-color: #420202; max-width: 540px;">
-          <div class="row g-0">
-            <div class="col-md-6">
-              <img src="images/rangok/sith.png" class="img-fluid rounded-start" alt="SITH">
+    </div>
+    <div class="col">
+      <div class="card mb-3" style="background-color: #003447; max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-6">
+            <img src="images/rangok/jedi.png" class="img-fluid rounded-start" alt="JEDI">
+          </div>
+          <div class="col-5">
+            <div class="card-body">
+              <h5 class="card-title text-end rankcolor">JEDI</h5>
+              <p class="card-text text-end rankcolor"><sub>BANKKÁRTYÁVAL</sub><br> 5000 FT</p>
             </div>
-            <div class="col-md-5">
-              <div class="card-body">
-                <h5 class="card-title text-end rankcolor">SITH</h5>
-                <p class="card-text text-end rankcolor"><sub>BANKKÁRTYÁVAL</sub>5000 FT</p>
+          </div>
+        </div>
+        <div class="row g-0">
+          <div class="accordion" id="accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button rankcolor" style="background-color: #003447;" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  Előnyök
+                </button>
+              </h2>
+              <div id="collapseTwelve" class="accordion-collapse collapse " data-bs-parent="#accordion">
+                <div class="accordion-body">
+                  <h6>Jedi képességek</h6>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item ">Jedi Kit : Revan (BedWars arénákban)</li>
+                    <li class="list-group-item ">Minden Kit ingyenesen lehívható a SkyPvP és a KitPvP szervereken.
+                      <ul class="list-group ">
+                        <li class="list-group-item">/jedi gyogyitas -> Regeneráció 3</li>
+                        <li class="list-group-item">/jedi ugras -> Ugrás 3</li>
+                        <li class="list-group-item">/jedi meditacio -> Regeneráció 2, Glowing 2, Sebzés ellenállás 2, Gyorsaság 2, Élet növelés 2</li>
+                      </ul>
+                    </li>
+                    <li class="list-group-item ">Brutál kinézetek</li>
+                    <li class="list-group-item ">Heti Egyszeri INGYENES áldások</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-          <div class="row g-0">
-            <div class="accordion" id="accordion">
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button rankcolor" style="background-color: #420202;" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="true"
-                    aria-controls="collapseOne">
-                    Előnyök
-                  </button>
-                </h2>
-                <div id="collapseThirteen" class="accordion-collapse collapse " data-bs-parent="#accordion">
-                  <div class="accordion-body">
-                    <h6>Sith képességek</h6>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item ">Sith Kit : Vestara (BedWars arénákban)</li>
-                      <li class="list-group-item ">Minden Kit ingyenesen lehívható a SkyPvP és a KitPvP szervereken.
-                        <ul class="list-group ">
-                          <li class="list-group-item">/sith erosites -> Erő 3</li>
-                          <li class="list-group-item">/sith gyorsitas -> Gyorsaság 3</li>
-                          <li class="list-group-item">/sith bosszuszomj-> Erő 2, Védelem tűztől 3, Instant gyógyulás 3, Élet növelés 2</li>
-                        </ul>
-                      </li>
-                      <li class="list-group-item ">Brutál kinézetek</li>
-                      <li class="list-group-item ">Heti Egyszeri INGYENES áldások</li>
-                    </ul>
-                  </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mb-3" style="background-color: #420202; max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-6">
+            <img src="images/rangok/sith.png" class="img-fluid rounded-start" alt="SITH">
+          </div>
+          <div class="col-5">
+            <div class="card-body">
+              <h5 class="card-title text-end rankcolor">SITH</h5>
+              <p class="card-text text-end rankcolor"><sub>BANKKÁRTYÁVAL</sub><br> 5000 FT</p>
+            </div>
+          </div>
+        </div>
+        <div class="row g-0">
+          <div class="accordion" id="accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button rankcolor" style="background-color: #420202;" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  Előnyök
+                </button>
+              </h2>
+              <div id="collapseThirteen" class="accordion-collapse collapse " data-bs-parent="#accordion">
+                <div class="accordion-body">
+                  <h6>Sith képességek</h6>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item ">Sith Kit : Vestara (BedWars arénákban)</li>
+                    <li class="list-group-item ">Minden Kit ingyenesen lehívható a SkyPvP és a KitPvP szervereken.
+                      <ul class="list-group ">
+                        <li class="list-group-item">/sith erosites -> Erő 3</li>
+                        <li class="list-group-item">/sith gyorsitas -> Gyorsaság 3</li>
+                        <li class="list-group-item">/sith bosszuszomj-> Erő 2, Védelem tűztől 3, Instant gyógyulás 3, Élet növelés 2</li>
+                      </ul>
+                    </li>
+                    <li class="list-group-item ">Brutál kinézetek</li>
+                    <li class="list-group-item ">Heti Egyszeri INGYENES áldások</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -712,6 +706,7 @@
       </div>
     </div>
   </div>
+  </section>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
