@@ -17,26 +17,7 @@ function getCookie(cname) {
 
 function addToCart(cost) {
     var icon = document.querySelector("#BasketContent")
-    costs += `${cost},`;
-    icon.innerHTML = parseInt(icon.innerHTML || 0) + 1;
-    document.cookie = `costs=${costs}`;
-    document.cookie = `basketCount=${parseInt(getCookie("basketCount") || 0) + 1}`;
-    // 
-    console.log(getCookie("basketCount"));
-    console.log(getCookie("costs"));
+    let newVal = parseInt(icon.innerHTML);
+    icon.innerHTML = newVal + 1
 }
 
-function emptyBasket()
-{
-    document.cookie = `basketCount=`;
-    document.cookie = `items=`;
-    location.reload();
-}
-
-function CalcAll() {
-    basketList = JSON.parse(items);
-    
-    Array.from(basketList).forEach(function(currVal, i, arr) {
-        console.log(mycost.rangok[basketList[i]]);
-    })
-}
