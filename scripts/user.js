@@ -59,4 +59,4 @@ function setBE(amount) {
 }
 
 // CALL FUNCTIONS IF ON RIGHT PAGES ************************************************************************************
-if ( document.getElementById("osszeg" ) != undefined) { document.getElementById("osszeg").innerText = getCookie("beosszeg") + " BÉ"; getSkinHead();}
+if ( document.getElementById("osszeg" ) != undefined) { document.getElementById("osszeg").innerText = getCookie("beosszeg") + " BÉ"; getSkinHead(); document.querySelector("#BasketContent").innerHTML = getCookie("basketCount") || ""}
