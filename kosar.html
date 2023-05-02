@@ -1,234 +1,234 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  <link rel="stylesheet" href="index.css">
-  <link rel="shortcut icon" href="images/pankox.ico" type="image/x-icon">
-  <title>Kosarad</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="images/pankox.ico" type="image/x-icon">
+    <title>Kosarad</title>
 </head>
+
 <body>
     <nav class="loadAnim navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a href="nav.html"><button class="btn btn-outline-success">&#x290E Navigátor</button></a>
-          <div class="text-end">
-            <button data-bs-toggle="modal" data-bs-target="#ShopDropDown" id="basket" type="button"
-              class="btn position-relative">
-              <span id="BasketContent"
-                class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-2"></span>
-            </button>
-            <span id="osszeg" class="mx-md-3 mb-2 mb-lg-0 p-2 fs-5"></span>
-            <span id="playername" class="mx-md-2 mb-2 mb-lg-0 p-2 fs-5"></span>
-            <img id="playerimg" class="mb-2 mb-lg-0" alt="Loading...">
-          </div>
+            <a href="nav.html"><button class="btn btn-outline-success">&#x290E Navigátor</button></a>
+            <div class="text-end">
+                <button data-bs-toggle="modal" data-bs-target="#ShopDropDown" id="basket" type="button"
+                    class="btn position-relative">
+                    <span id="BasketContent"
+                        class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-2"></span>
+                </button>
+                <span id="osszeg" class="mx-md-3 mb-2 mb-lg-0 p-2 fs-5"></span>
+                <span id="playername" class="mx-md-2 mb-2 mb-lg-0 p-2 fs-5"></span>
+                <img id="playerimg" class="mb-2 mb-lg-0" alt="Loading...">
+            </div>
         </div>
     </nav>
     <div id="navback" class="backgroundDiv"></div>
     <div class="row">
         <div class="col-md-4 order-md-2 mb-4">
-            <section class="container my-3">
+            <section class="container my-3 ">
                 <div class="row">
-                  <div id="skin2D" class="col-md-12">
-                    <div class="card">
-                      <div class="card-header fs-4 fst-italic">
-                        Kosarad
-                        <input type="checkbox" id="test" class="btn opacity-0" autocomplete="off">
-                      </div>
-                      <ul class="list-group mb-3 sticky-top">
-                        <li class="list-group-item d-flex justify-content-between lh-condensed">
-                            <div>
-                                <h6 class="my-0">Product name</h6>
-                                <small class="text-muted">Brief description</small>
+                    <div id="skin2D" class="col-md-12">
+                        <div class="card">
+                            <div class="card-header fs-4 fst-italic">
+                                Kosarad
+                                <input type="checkbox" id="test" class="btn opacity-0" autocomplete="off">
+                                <button type="button" id="clearCart" class="btn btn-danger rounded-end-2">Kosár ürítése</button>
                             </div>
-                            <span class="text-muted">$12</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between lh-condensed">
-                            <div>
-                                <h6 class="my-0">Second product</h6>
-                                <small class="text-muted">Brief description</small>
-                            </div>
-                            <span class="text-muted">$8</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between lh-condensed">
-                            <div>
-                                <h6 class="my-0">Third item</h6>
-                                <small class="text-muted">Brief description</small>
-                            </div>
-                            <span class="text-muted">$5</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between bg-light">
-                            <div class="text-success">
-                                <h6 class="my-0">Promo code</h6>
-                                <small>EXAMPLECODE</small>
-                            </div>
-                            <span class="text-success">-$5</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between">
-                            <span>Total (USD)</span>
-                            <strong>$20</strong>
-                        </li>
-                    </ul>
-                    <form class="card p-2">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Promo code">
-                            <div class="input-group-append">
-                                <button type="submit" class="btn btn-secondary">Redeem</button>
-                            </div>
+                            <ul class="list-group mb-3 sticky-top" id="product-list">
+                                <li class="list-group-item d-flex justify-content-between">
+                                    <span>Összesen (HUF)</span>
+                                    <strong id="sumTotal">$20</strong>
+                                </li>
+                            </ul>
                         </div>
-                    </form>
                     </div>
-                  </div>
                 </div>
             </section>
-            
+
         </div>
         <div class="col-md-8 order-md-1">
-            <h4 class="mb-3">Billing address</h4>
-            <form class="needs-validation" novalidate="">
+            <section class="container my-3">
                 <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label for="firstName">First name</label>
-                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
-                        <div class="invalid-feedback"> Valid first name is required. </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="lastName">Last name</label>
-                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
-                        <div class="invalid-feedback"> Valid last name is required. </div>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="username">Username</label>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text">@</span>
+                    <div id="skin2D" class="col-md-12">
+                        <div class="card">
+                            <div class="card-header fs-4 fst-italic">
+                                Számlázási cím
+                                <input type="checkbox" id="test" class="btn opacity-0" autocomplete="off">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="firstName">Vezetéknév</label>
+                                    <input type="text" class="form-control" id="firstName" placeholder="" value=""
+                                        required="">
+                                    <div class="invalid-feedback"> Érvényes vezetéknév szükséges. </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="lastName">Keresztnév</label>
+                                    <input type="text" class="form-control" id="lastName" placeholder="" value=""
+                                        required="">
+                                    <div class="invalid-feedback"> Érvényes keresztnév szükséges. </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="username">Felhasználónév</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">@</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="username" placeholder="Username"
+                                        required="">
+                                    <div class="invalid-feedback" style="width: 100%;"> A felhasznélónév szükséges.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email">Email <span class="text-muted">(Választható)</span></label>
+                                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                                <div class="invalid-feedback"> Kérjük, adjon meg egy érvényes e-mail címet a szállítási
+                                    értesítésekhez.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="address">Lakcím</label>
+                                <input type="text" class="form-control" id="address" placeholder="1234 Main St"
+                                    required="">
+                                <div class="invalid-feedback"> Kérjük, adja meg szállítási címét. </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="address2">Lakcím 2 <span class="text-muted">(Választható)</span></label>
+                                <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5 mb-3">
+                                    <label for="country">Város</label>
+                                    <select class="form-control d-block w-100" id="country" required="">
+                                        <option value="">Válasszon...</option>
+                                        <option>Budapest</option>
+                                        <option>Győr</option>
+                                        <option>Székesfehérvár</option>
+                                        <option>Szeged</option>
+                                        <option>Tata</option>
+                                        <option>Pápa</option>
+                                        <option>Nyíregyháza</option>
+                                        <option>Mosonmagyaróvár</option>
+                                    </select>
+                                    <div class="invalid-feedback"> Please select a valid country. </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="zip">Irányítószám</label>
+                                    <input type="text" class="form-control" id="zip" placeholder="" required="">
+                                    <div class="invalid-feedback"> Irányítószám szükséges. </div>
+                                </div>
+                            </div>
+                            <hr class="mb-4">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="same-address">
+                                <label class="custom-control-label" for="same-address">A szállítási cím megegyezik a
+                                    számlázási címemmel</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="save-info">
+                                <label class="custom-control-label" for="save-info">Emlékezz rá</label>
+                            </div>
+                            <hr class="mb-4">
                         </div>
-                        <input type="text" class="form-control" id="username" placeholder="Username" required="">
-                        <div class="invalid-feedback" style="width: 100%;"> Your username is required. </div>
                     </div>
                 </div>
-                <div class="mb-3">
-                    <label for="email">Email <span class="text-muted">(Optional)</span></label>
-                    <input type="email" class="form-control" id="email" placeholder="you@example.com">
-                    <div class="invalid-feedback"> Please enter a valid email address for shipping updates. </div>
-                </div>
-                <div class="mb-3">
-                    <label for="address">Address</label>
-                    <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
-                    <div class="invalid-feedback"> Please enter your shipping address. </div>
-                </div>
-                <div class="mb-3">
-                    <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
-                    <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
-                </div>
+            </section>
+            <section class="container my-3">
                 <div class="row">
-                    <div class="col-md-5 mb-3">
-                        <label for="country">Country</label>
-                        <select class="custom-select d-block w-100" id="country" required="">
-                            <option value="">Choose...</option>
-                            <option>United States</option>
-                        </select>
-                        <div class="invalid-feedback"> Please select a valid country. </div>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <label for="state">State</label>
-                        <select class="custom-select d-block w-100" id="state" required="">
-                            <option value="">Choose...</option>
-                            <option>California</option>
-                        </select>
-                        <div class="invalid-feedback"> Please provide a valid state. </div>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <label for="zip">Zip</label>
-                        <input type="text" class="form-control" id="zip" placeholder="" required="">
-                        <div class="invalid-feedback"> Zip code required. </div>
-                    </div>
-                </div>
-                <hr class="mb-4">
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="same-address">
-                    <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
-                </div>
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="save-info">
-                    <label class="custom-control-label" for="save-info">Save this information for next time</label>
-                </div>
-                <hr class="mb-4">
-                <h4 class="mb-3">Payment</h4>
-                <div class="d-block my-3">
-                    <div class="custom-control custom-radio">
-                        <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
-                        <label class="custom-control-label" for="credit">Credit card</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
-                        <label class="custom-control-label" for="debit">Debit card</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
-                        <label class="custom-control-label" for="paypal">PayPal</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label for="cc-name">Name on card</label>
-                        <input type="text" class="form-control" id="cc-name" placeholder="" required="">
-                        <small class="text-muted">Full name as displayed on card</small>
-                        <div class="invalid-feedback"> Name on card is required </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="cc-number">Credit card number</label>
-                        <input type="text" class="form-control" id="cc-number" placeholder="" required="">
-                        <div class="invalid-feedback"> Credit card number is required </div>
+                    <div id="skin2D" class="col-md-12">
+                        <div class="card">
+                            <div class="card-header fs-4 fst-italic">
+                                Fizetés
+                                <input type="checkbox" id="test" class="btn opacity-0" autocomplete="off">
+                            </div>
+                            <div class="d-block my-3">
+                                <div class="custom-control custom-radio">
+                                    <input id="credit" name="paymentMethod" type="radio" class="custom-control-input"
+                                        checked="" required="">
+                                    <label class="custom-control-label" for="credit">Bankkártya</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input id="debit" name="paymentMethod" type="radio" class="custom-control-input"
+                                        required="">
+                                    <label class="custom-control-label" for="debit">Hitelkártya</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input"
+                                        required="">
+                                    <label class="custom-control-label" for="paypal">PayPal</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="cc-name">A kártyán szereplő név</label>
+                                    <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                                    <small class="text-muted">A kártyán látható teljes név</small>
+                                    <div class="invalid-feedback">A kártyán szereplő név szükséges. </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="cc-number">Bankkártyaszám</label>
+                                    <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                                    <div class="invalid-feedback"> Bankkártyaszám szükséges. </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 mb-3">
+                                    <label for="cc-expiration">Lejárat</label>
+                                    <input type="text" class="form-control" id="cc-expiration" placeholder=""
+                                        required="">
+                                    <div class="invalid-feedback"> Lejárati dátum szükséges. </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="cc-cvv">CVV</label>
+                                    <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                                    <div class="invalid-feedback"> Biztonsági kód szükséges. </div>
+                                </div>
+                            </div>
+                            <hr class="mb-4">
+                            <button class="btn btn-primary btn-lg btn-block" type="submit">Tovább a fizetéshez</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-3 mb-3">
-                        <label for="cc-expiration">Expiration</label>
-                        <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
-                        <div class="invalid-feedback"> Expiration date required </div>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <label for="cc-cvv">CVV</label>
-                        <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
-                        <div class="invalid-feedback"> Security code required </div>
-                    </div>
-                </div>
-                <hr class="mb-4">
-                <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
-            </form>
+            </section>
         </div>
-    </div>
 
 
 
 
-    <div class="modal fade" id="ShopDropDown" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="ShopDropDown" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">Kosár</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal fade" id="ShopDropDown" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="ShopDropDown" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Kosár</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Végeztél a bevásárlással? Menj tovább a kosár kezelőre, hogy be tudd fejezni a tranzakciót!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Mégse</button>
+                        <button type="button" class="btn btn-primary"><a class="text-white"
+                                href="kosar.html">Kosárhoz</a></button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-          Végeztél a bevásárlással? Menj tovább a kosár kezelőre, hogy be tudd fejezni a tranzakciót!
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Mégse</button>
-          <button type="button" class="btn btn-primary"><a class="text-white" href="kosar.html">Kosárhoz</a></button>
-        </div>
-      </div>
-    </div>
-  </div>
-      <script src="scripts/extra.js"></script>
-      <script src="scripts/user.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"></script>
-      <script src="scripts/basket.js"></script>
+        <script src="scripts/extra.js"></script>
+        <script src="scripts/user.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+            crossorigin="anonymous"></script>
+        <script src="scripts/basket.js"></script>
 </body>
+
 </html>
