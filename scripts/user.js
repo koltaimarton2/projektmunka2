@@ -21,6 +21,7 @@ function Login() {
   document.cookie = "username=" + input.value;
   document.cookie = "beosszeg=" + Math.floor(Math.random() * 10001);
   document.cookie = "udvozlo= ";
+  document.cookie = "costs= ";
   if ((getCookie("username") != "")) window.location.href = 'nav.html'; // redirect to nav.html
 }
 
@@ -59,4 +60,4 @@ function setBE(amount) {
 }
 
 // CALL FUNCTIONS IF ON RIGHT PAGES ************************************************************************************
-if ( document.getElementById("osszeg" ) != undefined) { document.getElementById("osszeg").innerText = getCookie("beosszeg") + " BÉ"; getSkinHead(); document.querySelector("#BasketContent").innerHTML = getCookie("basketCount") || ""}
+if ( document.getElementById("osszeg" ) != undefined) { document.getElementById("osszeg").innerText = getCookie("beosszeg") + " BÉ"; getSkinHead(); document.querySelector("#BasketContent").innerHTML = getCookie("BasketContent") || ""}
