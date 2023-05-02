@@ -18,6 +18,11 @@
         <div class="container-fluid">
             <a href="nav.html"><button class="btn btn-outline-success">&#x290E Navigátor</button></a>
             <div class="text-end">
+                <button data-bs-toggle="modal" data-bs-target="#ShopDropDown" id="basket" type="button"
+                    class="btn position-relative">
+                    <span id="BasketContent"
+                        class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-2"></span>
+                </button>
                 <span id="osszeg" class="mx-md-3 mb-2 mb-lg-0 p-2 fs-5"></span>
                 <span id="playername" class="mx-md-2 mb-2 mb-lg-0 p-2 fs-5"></span>
                 <img id="playerimg" class="mb-2 mb-lg-0" alt="Loading...">
@@ -59,8 +64,7 @@
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6">
                     <div class="card text-center my-3 mx-auto border border-2" style="width: 18rem;">
-                        <img src="images/kardok/fa/1012.png" class="card-img-top img-responsive"
-                            alt="1012">
+                        <img src="images/kardok/fa/1012.png" class="card-img-top img-responsive" alt="1012">
                         <div class="card-body">
                             <h5 class="card-title">Azúr Karom</h5>
                             <p class="card-text"><s>240 Ft</s> <br> 120 Forint </p>
@@ -86,7 +90,8 @@
                 </div>
                 <div class="col-xl-12 col-lg-6 col-md-12">
                     <div class="card text-center my-3 mx-auto border border-2" style="width: 18rem;">
-                        <img src="images/kardok/fa/csomag_plusz.png" class="card-img-top img-responsive" alt="csomag_plusz">
+                        <img src="images/kardok/fa/csomag_plusz.png" class="card-img-top img-responsive"
+                            alt="csomag_plusz">
                         <div class="card-body">
                             <h5 class="card-title">Fa kard teljes csomag</h5>
                             <p class="card-text"><s>468 Ft</s> <br> 351 Forint </p>
@@ -203,8 +208,119 @@
                             <h5 class="card-title">Kő Kard Teljes Csomag</h5>
                             <p class="card-text"><s>2800 Ft</s> <br> 2100 Forint </p>
                             <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                            data-bs-toggle="modal" data-bs-target="#Veglegesites">
-                            Megveszem
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites">
+                                Megveszem
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container my-3">
+        <div class="card m-md-auto">
+            <div class="card-header fs-4 fst-italic">
+                Vas Kardok
+            </div>
+            <div class="row d-flex align-content-center ">
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card text-center my-3 mx-auto border border-2 " style="width: 18rem; ">
+                        <img src="images/kardok/vas/finalll.png" class="card-img-top img-responsive" alt="finalll">
+                        <div class="card-body">
+                            <h5 class="card-title">Koponyafaragó</h5>
+                            <p class="card-text"><s>800 Ft</s> <br> 400 Forint </p>
+                            <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites">
+                                Megveszem
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card text-center my-3 mx-auto border border-2" style="width: 18rem;">
+                        <img src="images/kardok/vas/lavadia.png" class="card-img-top img-responsive" alt="kardv2">
+                        <div class="card-body">
+                            <h5 class="card-title">Armageddon</h5>
+                            <p class="card-text"><s>1000 Ft</s> <br> 500 Forint </p>
+                            <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites">
+                                Megveszem
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card text-center my-3 mx-auto border border-2" style="width: 18rem;">
+                        <img src="images/kardok/vas/1014.png" class="card-img-top img-responsive" alt="1014">
+                        <div class="card-body">
+                            <h5 class="card-title">Magma Karom</h5>
+                            <p class="card-text"><s>1100 Ft</s> <br> 550 Forint </p>
+                            <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites">
+                                Megveszem
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card text-center my-3 mx-auto border border-2" style="width: 18rem;">
+                        <img src="images/kardok/vas/armblade3.png" class="card-img-top img-responsive" alt="armblade3">
+                        <div class="card-body">
+                            <h5 class="card-title">Kvarc Drakkar</h5>
+                            <p class="card-text"><s>1100 Ft</s> <br> 550 Forint </p>
+                            <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites">
+                                Megveszem
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card text-center my-3 mx-auto border border-2" style="width: 18rem;">
+                        <img src="images/kardok/vas/armblade7.png" class="card-img-top img-responsive" alt="armblade7">
+                        <div class="card-body">
+                            <h5 class="card-title">Tűzkő Drakkar</h5>
+                            <p class="card-text"><s>1100 Ft</s> <br> 550 Forint </p>
+                            <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites">
+                                Megveszem
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card text-center my-3 mx-auto border border-2" style="width: 18rem;">
+                        <img src="images/kardok/vas/armblade9.png" class="card-img-top img-responsive" alt="armblade9">
+                        <div class="card-body">
+                            <h5 class="card-title">Lávakő Drakkar</h5>
+                            <p class="card-text"><s>1100 Ft</s> <br> 550 Forint </p>
+                            <button class="btn btn-primary">Megveszem</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="card text-center my-3 mx-auto border border-2" style="width: 18rem;">
+                        <img src="images/kardok/vas/1022.png" class="card-img-top img-responsive" alt="1022">
+                        <div class="card-body">
+                            <h5 class="card-title">Káoszhozó</h5>
+                            <p class="card-text"><s>1600 Ft</s> <br> 800 Forint </p>
+                            <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites">
+                                Megveszem
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="card text-center my-3 mx-auto border border-2" style="width: 18rem;">
+                        <img src="images/kardok/vas/csomag_vas_plusz.png" class="card-img-top img-responsive"
+                            alt="csomag_vas_plusz">
+                        <div class="card-body">
+                            <h5 class="card-title">Vas Kard Teljes Csomag</h5>
+                            <p class="card-text"><s>3900 Ft</s> <br> 2925 Forint </p>
+                            <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites">
+                                Megveszem
                             </button>
                         </div>
                     </div>
@@ -220,7 +336,7 @@
             <div class="row d-flex align-content-center ">
                 <div class="col-xl-3 col-lg-4 col-md-6">
                     <div class="card text-center my-3 mx-auto border border-2 " style="width: 18rem; ">
-                            <img src="images/kardok/arany/kardv3.png" class="card-img-top img-responsive" alt="kardv3">
+                        <img src="images/kardok/arany/kardv3.png" class="card-img-top img-responsive" alt="kardv3">
                         <div class="card-body">
                             <h5 class="card-title">Arany hajnaltörő</h5>
                             <p class="card-text"><s>1600 Ft</s> <br> 800 Forint </p>
@@ -233,7 +349,8 @@
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6">
                     <div class="card text-center my-3 mx-auto border border-2" style="width: 18rem;">
-                        <img src="images/kardok/arany/creeperdenki.png" class="card-img-top img-responsive" alt="creeperdenki">
+                        <img src="images/kardok/arany/creeperdenki.png" class="card-img-top img-responsive"
+                            alt="creeperdenki">
                         <div class="card-body">
                             <h5 class="card-title">Creeper metsző</h5>
                             <p class="card-text"><s>1800 Ft</s> <br> 900 Forint </p>
@@ -246,8 +363,7 @@
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6">
                     <div class="card text-center my-3 mx-auto border border-2" style="width: 18rem;">
-                        <img src="images/kardok/arany/1015.png" class="card-img-top img-responsive"
-                            alt="1015">
+                        <img src="images/kardok/arany/1015.png" class="card-img-top img-responsive" alt="1015">
                         <div class="card-body">
                             <h5 class="card-title">Ametiszt Karom</h5>
                             <p class="card-text"><s>2000 Ft</s> <br> 1000 Forint </p>
@@ -260,7 +376,7 @@
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6">
                     <div class="card text-center my-3 mx-auto border border-2" style="width: 18rem;">
-                            <img src="images/kardok/arany/1011.png" class="card-img-top img-responsive" alt="1011">
+                        <img src="images/kardok/arany/1011.png" class="card-img-top img-responsive" alt="1011">
                         <div class="card-body">
                             <h5 class="card-title">Igazságtevő</h5>
                             <p class="card-text"><s>2200 Ft</s> <br> 1100 Forint </p>
@@ -271,9 +387,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="col-xl-6 col-lg-4 col-md-6">
                     <div class="card text-center my-3 mx-auto border border-2" style="width: 18rem;">
-                        <img src="images/kardok/arany/armblade4.png" class="card-img-top img-responsive" alt="csomag_arany_plusz">
+                        <img src="images/kardok/arany/armblade4.png" class="card-img-top img-responsive"
+                            alt="csomag_arany_plusz">
                         <div class="card-body">
                             <h5 class="card-title">Holdkő Drakkar</h5>
                             <p class="card-text"><s>1900 Ft</s> <br> 950 Forint </p>
@@ -284,9 +401,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="col-xl-6 col-lg-4 col-md-6">
                     <div class="card text-center my-3 mx-auto border border-2" style="width: 18rem;">
-                        <img src="images/kardok/arany/csomag_arany_plusz.png" class="card-img-top img-responsive" alt="armblade9">
+                        <img src="images/kardok/arany/csomag_arany_plusz.png" class="card-img-top img-responsive"
+                            alt="armblade9">
                         <div class="card-body">
                             <h5 class="card-title">Arany kard teljes csomag</h5>
                             <p class="card-text"><s>4748 Ft</s> <br> 3561 Forint </p>
@@ -297,120 +415,27 @@
             </div>
         </div>
     </section>
-    <section class="container my-3">
-        <div class="card m-md-auto">
-            <div class="card-header fs-4 fst-italic">
-                Kő Kardok
-            </div>
-            <div class="row d-flex align-content-center ">
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="card text-center my-3 mx-auto border border-2 " style="width: 18rem; ">
-                        <img src="images/kardok/ko/bluedrag.png" class="card-img-top img-responsive" alt="bluedrag">
-                        <div class="card-body">
-                            <h5 class="card-title">Kék Megváltás</h5>
-                            <p class="card-text"><s>600 Ft</s> <br> 300 Forint </p>
-                            <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites">
-                                Megveszem
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="card text-center my-3 mx-auto border border-2" style="width: 18rem;">
-                        <img src="images/kardok/ko/kardv2.png" class="card-img-top img-responsive" alt="kardv2">
-                        <div class="card-body">
-                            <h5 class="card-title">Feketeszív</h5>
-                            <p class="card-text"><s>600 Ft</s> <br> 300 Forint </p>
-                            <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites">
-                                Megveszem
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="card text-center my-3 mx-auto border border-2" style="width: 18rem;">
-                        <img src="images/kardok/ko/illidankard.png" class="card-img-top img-responsive"
-                            alt="illidankard">
-                        <div class="card-body">
-                            <h5 class="card-title">Illidan Pengéje</h5>
-                            <p class="card-text"><s>800 Ft</s> <br> 400 Forint </p>
-                            <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites">
-                                Megveszem
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="card text-center my-3 mx-auto border border-2" style="width: 18rem;">
-                        <img src="images/kardok/ko/1013.png" class="card-img-top img-responsive" alt="1013">
-                        <div class="card-body">
-                            <h5 class="card-title">Smaragd Karom</h5>
-                            <p class="card-text"><s>900 Ft</s> <br> 450 Forint </p>
-                            <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites">
-                                Megveszem
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="card text-center my-3 mx-auto border border-2" style="width: 18rem;">
-                        <img src="images/kardok/ko/armblade.png" class="card-img-top img-responsive" alt="armblade">
-                        <div class="card-body">
-                            <h5 class="card-title">Drakkar</h5>
-                            <p class="card-text"><s>900 Ft</s> <br> 450 Forint </p>
-                            <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites">
-                                Megveszem
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="card text-center my-3 mx-auto border border-2" style="width: 18rem;">
-                        <img src="images/kardok/ko/armblade2.png" class="card-img-top img-responsive" alt="armblade2">
-                        <div class="card-body">
-                            <h5 class="card-title">Kianit Drakkar</h5>
-                            <p class="card-text"><s>900 Ft</s> <br> 450 Forint </p>
-                            <button class="btn btn-primary">Megveszem</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-6 col-md-6">
-                    <div class="card text-center my-3 mx-auto border border-2" style="width: 18rem;">
-                        <img src="images/kardok/ko/armblade8.png" class="card-img-top img-responsive" alt="armblade8">
-                        <div class="card-body">
-                            <h5 class="card-title">Gránit Drakkar</h5>
-                            <p class="card-text"><s>900 Ft</s> <br> 450 Forint </p>
-                            <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites">
-                                Megveszem
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-6 col-md-6">
-                    <div class="card text-center my-3 mx-auto border border-2" style="width: 18rem;">
-                        <img src="images/kardok/ko/csomag_ko_plusz.png" class="card-img-top img-responsive"
-                            alt="csomag_ko_plusz">
-                        <div class="card-body">
-                            <h5 class="card-title">Kő Kard Teljes Csomag</h5>
-                            <p class="card-text"><s>2800 Ft</s> <br> 2100 Forint </p>
-                            <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                            data-bs-toggle="modal" data-bs-target="#Veglegesites">
-                            Megveszem
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="modal fade" id="ShopDropDown" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="ShopDropDown" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Kosár</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-    </section>
+        <div class="modal-body">
+          Végeztél a bevásárlással? Menj tovább a kosár kezelőre, hogy be tudd fejezni a tranzakciót!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Mégse</button>
+          <button type="button" class="btn btn-primary"><a class="text-white" href="kosar.html">Kosárhoz</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="scripts/basket.js"></script>
     <script src="scripts/user.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"></script>
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 </body>
