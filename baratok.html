@@ -15,7 +15,7 @@
 <body>
     <nav class="loadAnim navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a href="nav.html"><button class="btn btn-outline-success">&#x290E Navigátor</button></a>
+            <a href="nav.html"><button id="navbtn" class="btn btn-outline-success">&#x290E Navigátor</button></a>
             <div class="text-end">
                 <button data-bs-toggle="modal" data-bs-target="#ShopDropDown" id="basket" type="button" class="btn position-relative">
                     <span id="BasketContent" class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-2"></span>
@@ -43,43 +43,43 @@
                             <div class="col"><img src="images/friends/030.png" width="40"><p class="d-inline-block mx-1">Pankix</p></div>
                             <div class="col"><p class="d-inline-block">ADMIN</p></div>
                             <div class="col"><button class="btn btn-outline-info text-end">Üzenet📧</button></div>
-                            <div class="col"><button onclick="deleteFriend(1, 'on')" class="btn btn-outline-danger text-end">Törlés <span class="fw-bolder">X</span></button></div>
+                            <div class="col"><button onclick="deleteFriend(1, 'on')" class="btn btn-outline-danger text-end">Törlés<span class="fw-bolder">X</span></button></div>
                         </div>
                         <div class="row">
                             <div class="col"><img src="images/friends/8ufshd.png" width="40"><p class="d-inline-block mx-1">TarkhonVagh</p></div>
                             <div class="col"><p class="d-inline-block">JEDI</p></div>
                             <div class="col"><button class="btn btn-outline-info text-end">Üzenet📧</button></div>
-                            <div class="col"><button onclick="deleteFriend(2, 'on')" class="btn btn-outline-danger text-end">Törlés <span class="fw-bolder">X</span></button></div>
+                            <div class="col"><button onclick="deleteFriend(2, 'on')" class="btn btn-outline-danger text-end">Törlés<span class="fw-bolder">X</span></button></div>
                         </div>
                         <div class="row">
                             <div class="col"><img src="images/friends/asd1.png" width="40"><p class="d-inline-block mx-1">SegbheMaflash</p></div>
                             <div class="col"><p class="d-inline-block">SITH</p></div>
                             <div class="col"><button class="btn btn-outline-info text-end">Üzenet📧</button></div>
-                            <div class="col"><button onclick="deleteFriend(3, 'on')" class="btn btn-outline-danger text-end">Törlés <span class="fw-bolder">X</span></button></div>
+                            <div class="col"><button onclick="deleteFriend(3, 'on')" class="btn btn-outline-danger text-end">Törlés<span class="fw-bolder">X</span></button></div>
                         </div>
                         <div class="row">
                             <div class="col"><img src="images/friends/asd34.png" width="40"><p class="d-inline-block mx-1">Watashigashinu</p></div>
                             <div class="col"><p class="d-inline-block">TROLL</p></div>
                             <div class="col"><button class="btn btn-outline-info text-end">Üzenet📧</button></div>
-                            <div class="col"><button onclick="deleteFriend(4, 'on')" class="btn btn-outline-danger text-end">Törlés <span class="fw-bolder">X</span></button></div>
+                            <div class="col"><button onclick="deleteFriend(4, 'on')" class="btn btn-outline-danger text-end">Törlés<span class="fw-bolder">X</span></button></div>
                         </div>
                         <div class="row">
                             <div class="col"><img src="images/friends/dog.png" width="40"><p class="d-inline-block mx-1">miucciderò</p></div>
                             <div class="col"><p class="d-inline-block">VIP</p></div>
                             <div class="col"><button class="btn btn-outline-info text-end">Üzenet📧</button></div>
-                            <div class="col"><button onclick="deleteFriend(5, 'on')" class="btn btn-outline-danger text-end">Törlés <span class="fw-bolder">X</span></button></div>
+                            <div class="col"><button onclick="deleteFriend(5, 'on')" class="btn btn-outline-danger text-end">Törlés<span class="fw-bolder">X</span></button></div>
                         </div>
                         <div class="row">
                             <div class="col"><img src="images/friends/duck.png" width="40"><p class="d-inline-block mx-1">KYSS</p></div>
                             <div class="col"><p class="d-inline-block">TROLL+</p></div>
                             <div class="col"><button class="btn btn-outline-info text-end">Üzenet📧</button></div>
-                            <div class="col"><button onclick="deleteFriend(6, 'on')" class="btn btn-outline-danger text-end">Törlés <span class="fw-bolder">X</span></button></div>
+                            <div class="col"><button onclick="deleteFriend(6, 'on')" class="btn btn-outline-danger text-end">Törlés<span class="fw-bolder">X</span></button></div>
                         </div>
                         <div class="row">
                             <div class="col"><img src="images/friends/gg.png" width="40"><p class="d-inline-block mx-1">N1GtotheGa</p></div>
                             <div class="col"><p class="d-inline-block">ELIT</p></div>
                             <div class="col"><button class="btn btn-outline-info text-end">Üzenet📧</button></div>
-                            <div class="col"><button onclick="deleteFriend(7, 'on')" class="btn btn-outline-danger text-end">Törlés <span class="fw-bolder">X</span></button></div>
+                            <div class="col"><button onclick="deleteFriend(7, 'on')" class="btn btn-outline-danger text-end">Törlés<span class="fw-bolder">X</span></button></div>
                         </div>
                     </div>
                     <div id="offline" class="col-md-4">
@@ -90,22 +90,22 @@
                         <div class="row">
                                 <div class="col"><img src="images/friends/fool.png" width="40"><p class="d-inline-block mx-1">Bturbi</p></div>
                                 <div class="col"><p class="d-inline-block">MINDENHATÓ+</p></div>
-                                <div class="col"><button onclick="deleteFriend(1, 'off')" class="btn btn-outline-danger text-end">Törlés <span class="fw-bolder">X</span></button></div>
+                                <div class="col"><button onclick="deleteFriend(1, 'off')" class="btn btn-outline-danger text-end">Törlés<span class="fw-bolder">X</span></button></div>
                             </div>
                             <div class="row">
                                 <div class="col"><img src="images/friends/iujuz.png" width="40"><p class="d-inline-block mx-1">Anya</p></div>
                                 <div class="col"><p class="d-inline-block">BOSSZÚÁLLÓ</p></div>
-                                <div class="col"><button onclick="deleteFriend(2, 'off')" class="btn btn-outline-danger text-end">Törlés <span class="fw-bolder">X</span></button></div>
+                                <div class="col"><button onclick="deleteFriend(2, 'off')" class="btn btn-outline-danger text-end">Törlés<span class="fw-bolder">X</span></button></div>
                             </div>
                             <div class="row">
                                 <div class="col"><img src="images/friends/mega.png" width="40"><p class="d-inline-block mx-1">Arcane</p></div>
                                 <div class="col"><p class="d-inline-block">FÉLISTEN</p></div>
-                                <div class="col"><button onclick="deleteFriend(3, 'off')" class="btn btn-outline-danger text-end">Törlés <span class="fw-bolder">X</span></button></div>
+                                <div class="col"><button onclick="deleteFriend(3, 'off')" class="btn btn-outline-danger text-end">Törlés<span class="fw-bolder">X</span></button></div>
                             </div>
                             <div class="row">
                                 <div class="col"><img src="images/friends/10f.png" width="40"><p class="d-inline-block mx-1">Cum</p></div>
                                 <div class="col"><p class="d-inline-block">VIP</p></div>
-                                <div class="col"><button onclick="deleteFriend(4, 'off')" class="btn btn-outline-danger text-end">Törlés <span class="fw-bolder">X</span></button></div>
+                                <div class="col"><button onclick="deleteFriend(4, 'off')" class="btn btn-outline-danger text-end">Törlés<span class="fw-bolder">X</span></button></div>
                             </div>
                         </div>
                 </div>
