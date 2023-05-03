@@ -42,13 +42,20 @@ function clearCart(event) {
   updateCart();
   console.log('kosár ürítve');
   console.log(cart);
+  document.cookie = "BasketContent=";
+  console.log('asd')
+  location.reload();
+
 }
 
 function add(event) {
   let price = Number(event.target.dataset.price);
   let title = event.target.dataset.title;
   let id = event.target.dataset.id;
-
+  var icon = document.querySelector("#BasketContent");
+  let newVal = parseInt(icon.innerHTML) || 0;
+  icon.innerHTML = newVal + 1;
+  document.cookie = `BasketContent=${newVal + 1}`;
   if (id in cart) {
     cart[id].qty++;
 } else {

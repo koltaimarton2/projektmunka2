@@ -16,7 +16,7 @@
 <body>
     <nav class="loadAnim navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a href="nav.html"><button class="btn btn-outline-success">&#x290E Navigátor</button></a>
+            <a href="nav.html"><button id="navbtn" class="btn  btn-outline-success">&#x290E Navigátor</button></a>
             <div class="text-end">
                 <button data-bs-toggle="modal" data-bs-target="#ShopDropDown" id="basket" type="button"
                     class="btn position-relative">
@@ -35,30 +35,35 @@
             <div class="card-header fs-4 fst-italic">
                 Brutál kinézetek
             </div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav">
-                    <li class="nav-item ">
-                      <a class="nav-link" href="#fa">Fa kardok</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#ko">Kő kardok</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#vas">Vas kardok</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#arany">Arany kardok</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#dia">Gyémánt kardok</a>
-                      </li>
-                  </ul>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link"" href=" #fa">Fa Kardok</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#ko">Kő kardok</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#vas">Vas kardok</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#arany">Arany Kardok</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#dia">Gyémánt Kardok</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-              </nav>
+            </nav>
         </div>
     </section>
     <section id="fa" class="container my-3">
@@ -74,7 +79,8 @@
                             <h5 class="card-title">Zöld Éjpenge</h5>
                             <p class="card-text"><s>100 Ft</s> <br> 50 Forint </p>
                             <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="1" data-price="50" data-title="Zöld Éjpenge">
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="1" data-price="50"
+                                data-title="Zöld Éjpenge">
                                 Megveszem
                             </button>
                         </div>
@@ -87,7 +93,8 @@
                             <h5 class="card-title">Omega</h5>
                             <p class="card-text"><s>200 Ft</s> <br> 100 Forint </p>
                             <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="2" data-price="100" data-title="Omega">
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="2" data-price="100"
+                                data-title="Omega">
                                 Megveszem
                             </button>
                         </div>
@@ -100,7 +107,8 @@
                             <h5 class="card-title">Azúr Karom</h5>
                             <p class="card-text"><s>240 Ft</s> <br> 120 Forint </p>
                             <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="3" data-price="120" data-title="Azúr Karom">
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="3" data-price="120"
+                                data-title="Azúr Karom">
                                 Megveszem
                             </button>
                         </div>
@@ -113,7 +121,8 @@
                             <h5 class="card-title">Obsidian Drakkar</h5>
                             <p class="card-text"><s>400 Ft</s> <br> 200 Forint </p>
                             <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="4" data-price="200" data-title="Obsidian Drakkar">
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="4" data-price="200"
+                                data-title="Obsidian Drakkar">
                                 Megveszem
                             </button>
                         </div>
@@ -127,7 +136,8 @@
                             <h5 class="card-title">Fa kard teljes csomag</h5>
                             <p class="card-text"><s>468 Ft</s> <br> 351 Forint </p>
                             <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="5" data-price="351" data-title="Fa kard teljes csomag">
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="5" data-price="351"
+                                data-title="Fa kard teljes csomag">
                                 Megveszem
                             </button>
                         </div>
@@ -149,7 +159,8 @@
                             <h5 class="card-title">Kék Megváltás</h5>
                             <p class="card-text"><s>600 Ft</s> <br> 300 Forint </p>
                             <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="6" data-price="300" data-title="Kék Megváltás">
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="6" data-price="300"
+                                data-title="Kék Megváltás">
                                 Megveszem
                             </button>
                         </div>
@@ -162,7 +173,8 @@
                             <h5 class="card-title">Feketeszív</h5>
                             <p class="card-text"><s>600 Ft</s> <br> 300 Forint </p>
                             <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="7" data-price="300" data-title="Feketeszív">
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="7" data-price="300"
+                                data-title="Feketeszív">
                                 Megveszem
                             </button>
                         </div>
@@ -176,7 +188,8 @@
                             <h5 class="card-title">Illidan Pengéje</h5>
                             <p class="card-text"><s>800 Ft</s> <br> 400 Forint </p>
                             <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="8" data-price="400" data-title="Illidan Pengéje">
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="8" data-price="400"
+                                data-title="Illidan Pengéje">
                                 Megveszem
                             </button>
                         </div>
@@ -189,7 +202,8 @@
                             <h5 class="card-title">Smaragd Karom</h5>
                             <p class="card-text"><s>900 Ft</s> <br> 450 Forint </p>
                             <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="9" data-price="450" data-title="Smaragd Karom">
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="9" data-price="450"
+                                data-title="Smaragd Karom">
                                 Megveszem
                             </button>
                         </div>
@@ -202,7 +216,8 @@
                             <h5 class="card-title">Drakkar</h5>
                             <p class="card-text"><s>900 Ft</s> <br> 450 Forint </p>
                             <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="10" data-price="450" data-title="Drakkar">
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="10" data-price="450"
+                                data-title="Drakkar">
                                 Megveszem
                             </button>
                         </div>
@@ -215,7 +230,8 @@
                             <h5 class="card-title">Kianit Drakkar</h5>
                             <p class="card-text"><s>900 Ft</s> <br> 450 Forint </p>
                             <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="11" data-price="450" data-title="Kianit Drakkar">
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="11" data-price="450"
+                                data-title="Kianit Drakkar">
                                 Megveszem
                             </button>
                         </div>
@@ -228,7 +244,8 @@
                             <h5 class="card-title">Gránit Drakkar</h5>
                             <p class="card-text"><s>900 Ft</s> <br> 450 Forint </p>
                             <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites"  data-id="12" data-price="450" data-title="Gránit Drakkar">
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="12" data-price="450"
+                                data-title="Gránit Drakkar">
                                 Megveszem
                             </button>
                         </div>
@@ -242,7 +259,8 @@
                             <h5 class="card-title">Kő Kard Teljes Csomag</h5>
                             <p class="card-text"><s>2800 Ft</s> <br> 2100 Forint </p>
                             <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites"  data-id="13" data-price="2100" data-title="Kő Kard Teljes Csomag">
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="13" data-price="2100"
+                                data-title="Kő Kard Teljes Csomag">
                                 Megveszem
                             </button>
                         </div>
@@ -264,7 +282,8 @@
                             <h5 class="card-title">Koponyafaragó</h5>
                             <p class="card-text"><s>800 Ft</s> <br> 400 Forint </p>
                             <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites"  data-id="14" data-price="400" data-title="Koponyafaragó">
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="14" data-price="400"
+                                data-title="Koponyafaragó">
                                 Megveszem
                             </button>
                         </div>
@@ -277,7 +296,8 @@
                             <h5 class="card-title">Armageddon</h5>
                             <p class="card-text"><s>1000 Ft</s> <br> 500 Forint </p>
                             <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites"  data-id="15" data-price="500" data-title="Armageddon">
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="15" data-price="500"
+                                data-title="Armageddon">
                                 Megveszem
                             </button>
                         </div>
@@ -290,7 +310,8 @@
                             <h5 class="card-title">Magma Karom</h5>
                             <p class="card-text"><s>1100 Ft</s> <br> 550 Forint </p>
                             <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites"  data-id="16" data-price="550" data-title="Magma Karom">
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="16" data-price="550"
+                                data-title="Magma Karom">
                                 Megveszem
                             </button>
                         </div>
@@ -303,7 +324,8 @@
                             <h5 class="card-title">Kvarc Drakkar</h5>
                             <p class="card-text"><s>1100 Ft</s> <br> 550 Forint </p>
                             <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites"  data-id="17" data-price="550" data-title="Kvarc Drakkar">
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="17" data-price="550"
+                                data-title="Kvarc Drakkar">
                                 Megveszem
                             </button>
                         </div>
@@ -316,7 +338,8 @@
                             <h5 class="card-title">Tűzkő Drakkar</h5>
                             <p class="card-text"><s>1100 Ft</s> <br> 550 Forint </p>
                             <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites"  data-id="18" data-price="550" data-title="Tűzkő Drakkar">
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="18" data-price="550"
+                                data-title="Tűzkő Drakkar">
                                 Megveszem
                             </button>
                         </div>
@@ -329,7 +352,8 @@
                             <h5 class="card-title">Lávakő Drakkar</h5>
                             <p class="card-text"><s>1100 Ft</s> <br> 550 Forint </p>
                             <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites"  data-id="19" data-price="550" data-title="Lávakő Drakkar">
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="19" data-price="550"
+                                data-title="Lávakő Drakkar">
                                 Megveszem
                             </button>
                         </div>
@@ -342,7 +366,8 @@
                             <h5 class="card-title">Káoszhozó</h5>
                             <p class="card-text"><s>1600 Ft</s> <br> 800 Forint </p>
                             <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="20" data-price="800" data-title="Káoszhozó">
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="20" data-price="800"
+                                data-title="Káoszhozó">
                                 Megveszem
                             </button>
                         </div>
@@ -356,7 +381,8 @@
                             <h5 class="card-title">Vas Kard Teljes Csomag</h5>
                             <p class="card-text"><s>3900 Ft</s> <br> 2925 Forint </p>
                             <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="21" data-price="2925" data-title="Vas Kard Teljes Csomag">
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="21" data-price="2925"
+                                data-title="Vas Kard Teljes Csomag">
                                 Megveszem
                             </button>
                         </div>
@@ -378,7 +404,8 @@
                             <h5 class="card-title">Arany hajnaltörő</h5>
                             <p class="card-text"><s>1600 Ft</s> <br> 800 Forint </p>
                             <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="22" data-price="800" data-title="Arany hajnaltörő">
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="22" data-price="800"
+                                data-title="Arany hajnaltörő">
                                 Megveszem
                             </button>
                         </div>
@@ -392,7 +419,8 @@
                             <h5 class="card-title">Creeper metsző</h5>
                             <p class="card-text"><s>1800 Ft</s> <br> 900 Forint </p>
                             <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="23" data-price="900" data-title="Creeper metsző">
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="23" data-price="900"
+                                data-title="Creeper metsző">
                                 Megveszem
                             </button>
                         </div>
@@ -405,7 +433,8 @@
                             <h5 class="card-title">Ametiszt Karom</h5>
                             <p class="card-text"><s>2000 Ft</s> <br> 1000 Forint </p>
                             <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="24" data-price="1000" data-title="Ametiszt Karom">
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="24" data-price="1000"
+                                data-title="Ametiszt Karom">
                                 Megveszem
                             </button>
                         </div>
@@ -418,7 +447,8 @@
                             <h5 class="card-title">Igazságtevő</h5>
                             <p class="card-text"><s>2200 Ft</s> <br> 1100 Forint </p>
                             <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="25" data-price="1100" data-title="Igazságtevő">
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="25" data-price="1100"
+                                data-title="Igazságtevő">
                                 Megveszem
                             </button>
                         </div>
@@ -432,7 +462,8 @@
                             <h5 class="card-title">Holdkő Drakkar</h5>
                             <p class="card-text"><s>1900 Ft</s> <br> 950 Forint </p>
                             <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="26" data-price="950" data-title="Holdkő Drakkar">
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="26" data-price="950"
+                                data-title="Holdkő Drakkar">
                                 Megveszem
                             </button>
                         </div>
@@ -446,7 +477,8 @@
                             <h5 class="card-title">Arany kard teljes csomag</h5>
                             <p class="card-text"><s>4748 Ft</s> <br> 3561 Forint </p>
                             <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="27" data-price="3561" data-title="Arany Kard Teljes Csomag">
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="27" data-price="3561"
+                                data-title="Arany Kard Teljes Csomag">
                                 Megveszem
                             </button>
                         </div>
@@ -463,12 +495,14 @@
             <div class="row d-flex align-content-center ">
                 <div class="col-xl-3 col-lg-4 col-md-6">
                     <div class="card text-center my-3 mx-auto border border-2 " style="width: 18rem; ">
-                        <img src="images/kardok/gyemant/lelekfalo.png" class="card-img-top img-responsive" alt="lelekfalo">
+                        <img src="images/kardok/gyemant/lelekfalo.png" class="card-img-top img-responsive"
+                            alt="lelekfalo">
                         <div class="card-body product">
                             <h5 class="card-title">Lélekfaló</h5>
                             <p class="card-text"><s>1980 Ft</s> <br> 990 Forint </p>
                             <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="28" data-price="990" data-title="Lélekfaló">
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="28" data-price="990"
+                                data-title="Lélekfaló">
                                 Megveszem
                             </button>
                         </div>
@@ -476,12 +510,14 @@
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6">
                     <div class="card text-center my-3 mx-auto border border-2" style="width: 18rem;">
-                        <img src="images/kardok/gyemant/eskuszego.png" class="card-img-top img-responsive" alt="eskuszego">
+                        <img src="images/kardok/gyemant/eskuszego.png" class="card-img-top img-responsive"
+                            alt="eskuszego">
                         <div class="card-body product">
                             <h5 class="card-title">Esküszegő</h5>
                             <p class="card-text"><s>3980 Ft</s> <br> 1990 Forint </p>
                             <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="29" data-price="1990" data-title="Esküszegő">
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="29" data-price="1990"
+                                data-title="Esküszegő">
                                 Megveszem
                             </button>
                         </div>
@@ -494,7 +530,8 @@
                             <h5 class="card-title">Lazurit Karom</h5>
                             <p class="card-text"><s>1980 Ft</s> <br> 990 Forint </p>
                             <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="30" data-price="990" data-title="Lazurit Karom">
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="30" data-price="990"
+                                data-title="Lazurit Karom">
                                 Megveszem
                             </button>
                         </div>
@@ -502,12 +539,14 @@
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6">
                     <div class="card text-center my-3 mx-auto border border-2" style="width: 18rem;">
-                        <img src="images/kardok/gyemant/osiigeret.png" class="card-img-top img-responsive" alt="osiigeret">
+                        <img src="images/kardok/gyemant/osiigeret.png" class="card-img-top img-responsive"
+                            alt="osiigeret">
                         <div class="card-body product">
                             <h5 class="card-title">Ősi Ígéret</h5>
                             <p class="card-text"><s>4000 Ft</s> <br> 2000 Forint </p>
                             <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="31" data-price="2000" data-title="Ősi Ígéret">
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="31" data-price="2000"
+                                data-title="Ősi Ígéret">
                                 Megveszem
                             </button>
                         </div>
@@ -520,7 +559,8 @@
                             <h5 class="card-title">Lélekkő Drakkar</h5>
                             <p class="card-text"><s>3100 Ft</s> <br> 1550 Forint </p>
                             <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="32" data-price="1550" data-title="Lélekkő Drakkar">
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="32" data-price="1550"
+                                data-title="Lélekkő Drakkar">
                                 Megveszem
                             </button>
                         </div>
@@ -533,7 +573,8 @@
                             <h5 class="card-title">Zafír Drakkar</h5>
                             <p class="card-text"><s>3100 Ft</s> <br> 1550 Forint </p>
                             <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="33" data-price="1550" data-title="Zafír Drakkar">
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="33" data-price="1550"
+                                data-title="Zafír Drakkar">
                                 Megveszem
                             </button>
                         </div>
@@ -546,7 +587,8 @@
                             <h5 class="card-title">Ragnar</h5>
                             <p class="card-text"><s> 4200 Ft</s> <br> 2100 Forint </p>
                             <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites"  data-id="34" data-price="2100" data-title="Ragnar">
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="34" data-price="2100"
+                                data-title="Ragnar">
                                 Megveszem
                             </button>
                         </div>
@@ -560,7 +602,8 @@
                             <h5 class="card-title">Dia Kard Teljes Csomag</h5>
                             <p class="card-text"><s>11169 Ft</s> <br> 8377 Forint </p>
                             <button type="button" id="buyBtn" class="btn btn-primary rounded-end-2"
-                                data-bs-toggle="modal" data-bs-target="#Veglegesites"  data-id="35" data-price="8377" data-title="Dia Kard Teljes Csomag">
+                                data-bs-toggle="modal" data-bs-target="#Veglegesites" data-id="35" data-price="8377"
+                                data-title="Dia Kard Teljes Csomag">
                                 Megveszem
                             </button>
                         </div>
@@ -569,27 +612,32 @@
             </div>
         </div>
     </section>
-    
+
     <div class="modal fade" id="ShopDropDown" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="ShopDropDown" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">Kosár</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        aria-labelledby="ShopDropDown" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Kosár</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Végeztél a bevásárlással? Menj tovább a kosár kezelőre, hogy be tudd fejezni a tranzakciót!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Mégse</button>
+                    <button type="button" class="btn btn-success"><a class="text-white"
+                            href="kosar.html">Kosárhoz</a></button>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-          Végeztél a bevásárlással? Menj tovább a kosár kezelőre, hogy be tudd fejezni a tranzakciót!
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Mégse</button>
-          <button type="button" class="btn btn-primary"><a class="text-white" href="kosar.html">Kosárhoz</a></button>
-        </div>
-      </div>
     </div>
-  </div>
     <script src="scripts/user.js"></script>
+    <script src="scripts/basket.js"></script>
     <script src="scripts/extra.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
